@@ -1,0 +1,751 @@
+{
+    "title": "Dept 81: PV Prediction vs ORE (Thr 0.50)",
+    "scatter_points": [
+        {
+            "CodeInseeCommune": "81002.0",
+            "N_PV_Registered_ORE": 55.0,
+            "N_PV_Predicted_Model": 75.0
+        },
+        {
+            "CodeInseeCommune": "81003.0",
+            "N_PV_Registered_ORE": 18.0,
+            "N_PV_Predicted_Model": 24.0
+        },
+        {
+            "CodeInseeCommune": "81004.0",
+            "N_PV_Registered_ORE": 342.0,
+            "N_PV_Predicted_Model": 383.0
+        },
+        {
+            "CodeInseeCommune": "81008.0",
+            "N_PV_Registered_ORE": 26.0,
+            "N_PV_Predicted_Model": 11.0
+        },
+        {
+            "CodeInseeCommune": "81011.0",
+            "N_PV_Registered_ORE": 21.0,
+            "N_PV_Predicted_Model": 34.0
+        },
+        {
+            "CodeInseeCommune": "81013.0",
+            "N_PV_Registered_ORE": 20.0,
+            "N_PV_Predicted_Model": 20.0
+        },
+        {
+            "CodeInseeCommune": "81018.0",
+            "N_PV_Registered_ORE": 38.0,
+            "N_PV_Predicted_Model": 39.0
+        },
+        {
+            "CodeInseeCommune": "81021.0",
+            "N_PV_Registered_ORE": 58.0,
+            "N_PV_Predicted_Model": 67.0
+        },
+        {
+            "CodeInseeCommune": "81026.0",
+            "N_PV_Registered_ORE": 23.0,
+            "N_PV_Predicted_Model": 23.0
+        },
+        {
+            "CodeInseeCommune": "81031.0",
+            "N_PV_Registered_ORE": 22.0,
+            "N_PV_Predicted_Model": 24.0
+        },
+        {
+            "CodeInseeCommune": "81032.0",
+            "N_PV_Registered_ORE": 25.0,
+            "N_PV_Predicted_Model": 21.0
+        },
+        {
+            "CodeInseeCommune": "81033.0",
+            "N_PV_Registered_ORE": 46.0,
+            "N_PV_Predicted_Model": 38.0
+        },
+        {
+            "CodeInseeCommune": "81036.0",
+            "N_PV_Registered_ORE": 39.0,
+            "N_PV_Predicted_Model": 42.0
+        },
+        {
+            "CodeInseeCommune": "81038.0",
+            "N_PV_Registered_ORE": 72.0,
+            "N_PV_Predicted_Model": 61.0
+        },
+        {
+            "CodeInseeCommune": "81039.0",
+            "N_PV_Registered_ORE": 36.0,
+            "N_PV_Predicted_Model": 39.0
+        },
+        {
+            "CodeInseeCommune": "81042.0",
+            "N_PV_Registered_ORE": 48.0,
+            "N_PV_Predicted_Model": 56.0
+        },
+        {
+            "CodeInseeCommune": "81043.0",
+            "N_PV_Registered_ORE": 30.0,
+            "N_PV_Predicted_Model": 30.0
+        },
+        {
+            "CodeInseeCommune": "81046.0",
+            "N_PV_Registered_ORE": 53.0,
+            "N_PV_Predicted_Model": 53.0
+        },
+        {
+            "CodeInseeCommune": "81048.0",
+            "N_PV_Registered_ORE": 54.0,
+            "N_PV_Predicted_Model": 51.0
+        },
+        {
+            "CodeInseeCommune": "81051.0",
+            "N_PV_Registered_ORE": 35.0,
+            "N_PV_Predicted_Model": 32.0
+        },
+        {
+            "CodeInseeCommune": "81052.0",
+            "N_PV_Registered_ORE": 68.0,
+            "N_PV_Predicted_Model": 65.0
+        },
+        {
+            "CodeInseeCommune": "81054.0",
+            "N_PV_Registered_ORE": 37.0,
+            "N_PV_Predicted_Model": 29.0
+        },
+        {
+            "CodeInseeCommune": "81059.0",
+            "N_PV_Registered_ORE": 23.0,
+            "N_PV_Predicted_Model": 24.0
+        },
+        {
+            "CodeInseeCommune": "81060.0",
+            "N_PV_Registered_ORE": 537.0,
+            "N_PV_Predicted_Model": 156.0
+        },
+        {
+            "CodeInseeCommune": "81061.0",
+            "N_PV_Registered_ORE": 16.0,
+            "N_PV_Predicted_Model": 18.0
+        },
+        {
+            "CodeInseeCommune": "81062.0",
+            "N_PV_Registered_ORE": 16.0,
+            "N_PV_Predicted_Model": 19.0
+        },
+        {
+            "CodeInseeCommune": "81063.0",
+            "N_PV_Registered_ORE": 36.0,
+            "N_PV_Predicted_Model": 36.0
+        },
+        {
+            "CodeInseeCommune": "81064.0",
+            "N_PV_Registered_ORE": 34.0,
+            "N_PV_Predicted_Model": 40.0
+        },
+        {
+            "CodeInseeCommune": "81065.0",
+            "N_PV_Registered_ORE": 373.0,
+            "N_PV_Predicted_Model": 448.0
+        },
+        {
+            "CodeInseeCommune": "81068.0",
+            "N_PV_Registered_ORE": 16.0,
+            "N_PV_Predicted_Model": 5.0
+        },
+        {
+            "CodeInseeCommune": "81070.0",
+            "N_PV_Registered_ORE": 76.0,
+            "N_PV_Predicted_Model": 89.0
+        },
+        {
+            "CodeInseeCommune": "81074.0",
+            "N_PV_Registered_ORE": 40.0,
+            "N_PV_Predicted_Model": 45.0
+        },
+        {
+            "CodeInseeCommune": "81075.0",
+            "N_PV_Registered_ORE": 26.0,
+            "N_PV_Predicted_Model": 26.0
+        },
+        {
+            "CodeInseeCommune": "81076.0",
+            "N_PV_Registered_ORE": 21.0,
+            "N_PV_Predicted_Model": 23.0
+        },
+        {
+            "CodeInseeCommune": "81078.0",
+            "N_PV_Registered_ORE": 22.0,
+            "N_PV_Predicted_Model": 25.0
+        },
+        {
+            "CodeInseeCommune": "81081.0",
+            "N_PV_Registered_ORE": 33.0,
+            "N_PV_Predicted_Model": 37.0
+        },
+        {
+            "CodeInseeCommune": "81084.0",
+            "N_PV_Registered_ORE": 24.0,
+            "N_PV_Predicted_Model": 17.0
+        },
+        {
+            "CodeInseeCommune": "81088.0",
+            "N_PV_Registered_ORE": 29.0,
+            "N_PV_Predicted_Model": 21.0
+        },
+        {
+            "CodeInseeCommune": "81092.0",
+            "N_PV_Registered_ORE": 28.0,
+            "N_PV_Predicted_Model": 28.0
+        },
+        {
+            "CodeInseeCommune": "81093.0",
+            "N_PV_Registered_ORE": 20.0,
+            "N_PV_Predicted_Model": 21.0
+        },
+        {
+            "CodeInseeCommune": "81096.0",
+            "N_PV_Registered_ORE": 28.0,
+            "N_PV_Predicted_Model": 21.0
+        },
+        {
+            "CodeInseeCommune": "81097.0",
+            "N_PV_Registered_ORE": 49.0,
+            "N_PV_Predicted_Model": 49.0
+        },
+        {
+            "CodeInseeCommune": "81098.0",
+            "N_PV_Registered_ORE": 23.0,
+            "N_PV_Predicted_Model": 27.0
+        },
+        {
+            "CodeInseeCommune": "81099.0",
+            "N_PV_Registered_ORE": 242.0,
+            "N_PV_Predicted_Model": 235.0
+        },
+        {
+            "CodeInseeCommune": "81101.0",
+            "N_PV_Registered_ORE": 45.0,
+            "N_PV_Predicted_Model": 42.0
+        },
+        {
+            "CodeInseeCommune": "81102.0",
+            "N_PV_Registered_ORE": 16.0,
+            "N_PV_Predicted_Model": 15.0
+        },
+        {
+            "CodeInseeCommune": "81104.0",
+            "N_PV_Registered_ORE": 54.0,
+            "N_PV_Predicted_Model": 51.0
+        },
+        {
+            "CodeInseeCommune": "81105.0",
+            "N_PV_Registered_ORE": 168.0,
+            "N_PV_Predicted_Model": 180.0
+        },
+        {
+            "CodeInseeCommune": "81106.0",
+            "N_PV_Registered_ORE": 24.0,
+            "N_PV_Predicted_Model": 28.0
+        },
+        {
+            "CodeInseeCommune": "81109.0",
+            "N_PV_Registered_ORE": 19.0,
+            "N_PV_Predicted_Model": 20.0
+        },
+        {
+            "CodeInseeCommune": "81112.0",
+            "N_PV_Registered_ORE": 18.0,
+            "N_PV_Predicted_Model": 20.0
+        },
+        {
+            "CodeInseeCommune": "81114.0",
+            "N_PV_Registered_ORE": 32.0,
+            "N_PV_Predicted_Model": 13.0
+        },
+        {
+            "CodeInseeCommune": "81115.0",
+            "N_PV_Registered_ORE": 30.0,
+            "N_PV_Predicted_Model": 24.0
+        },
+        {
+            "CodeInseeCommune": "81116.0",
+            "N_PV_Registered_ORE": 33.0,
+            "N_PV_Predicted_Model": 50.0
+        },
+        {
+            "CodeInseeCommune": "81117.0",
+            "N_PV_Registered_ORE": 20.0,
+            "N_PV_Predicted_Model": 24.0
+        },
+        {
+            "CodeInseeCommune": "81119.0",
+            "N_PV_Registered_ORE": 21.0,
+            "N_PV_Predicted_Model": 20.0
+        },
+        {
+            "CodeInseeCommune": "81120.0",
+            "N_PV_Registered_ORE": 133.0,
+            "N_PV_Predicted_Model": 175.0
+        },
+        {
+            "CodeInseeCommune": "81124.0",
+            "N_PV_Registered_ORE": 17.0,
+            "N_PV_Predicted_Model": 22.0
+        },
+        {
+            "CodeInseeCommune": "81128.0",
+            "N_PV_Registered_ORE": 25.0,
+            "N_PV_Predicted_Model": 30.0
+        },
+        {
+            "CodeInseeCommune": "81130.0",
+            "N_PV_Registered_ORE": 39.0,
+            "N_PV_Predicted_Model": 47.0
+        },
+        {
+            "CodeInseeCommune": "81131.0",
+            "N_PV_Registered_ORE": 62.0,
+            "N_PV_Predicted_Model": 54.0
+        },
+        {
+            "CodeInseeCommune": "81132.0",
+            "N_PV_Registered_ORE": 22.0,
+            "N_PV_Predicted_Model": 20.0
+        },
+        {
+            "CodeInseeCommune": "81133.0",
+            "N_PV_Registered_ORE": 17.0,
+            "N_PV_Predicted_Model": 19.0
+        },
+        {
+            "CodeInseeCommune": "81138.0",
+            "N_PV_Registered_ORE": 31.0,
+            "N_PV_Predicted_Model": 22.0
+        },
+        {
+            "CodeInseeCommune": "81139.0",
+            "N_PV_Registered_ORE": 68.0,
+            "N_PV_Predicted_Model": 56.0
+        },
+        {
+            "CodeInseeCommune": "81140.0",
+            "N_PV_Registered_ORE": 141.0,
+            "N_PV_Predicted_Model": 145.0
+        },
+        {
+            "CodeInseeCommune": "81142.0",
+            "N_PV_Registered_ORE": 27.0,
+            "N_PV_Predicted_Model": 25.0
+        },
+        {
+            "CodeInseeCommune": "81143.0",
+            "N_PV_Registered_ORE": 24.0,
+            "N_PV_Predicted_Model": 22.0
+        },
+        {
+            "CodeInseeCommune": "81144.0",
+            "N_PV_Registered_ORE": 93.0,
+            "N_PV_Predicted_Model": 107.0
+        },
+        {
+            "CodeInseeCommune": "81145.0",
+            "N_PV_Registered_ORE": 104.0,
+            "N_PV_Predicted_Model": 108.0
+        },
+        {
+            "CodeInseeCommune": "81147.0",
+            "N_PV_Registered_ORE": 46.0,
+            "N_PV_Predicted_Model": 53.0
+        },
+        {
+            "CodeInseeCommune": "81149.0",
+            "N_PV_Registered_ORE": 16.0,
+            "N_PV_Predicted_Model": 17.0
+        },
+        {
+            "CodeInseeCommune": "81156.0",
+            "N_PV_Registered_ORE": 53.0,
+            "N_PV_Predicted_Model": 56.0
+        },
+        {
+            "CodeInseeCommune": "81163.0",
+            "N_PV_Registered_ORE": 105.0,
+            "N_PV_Predicted_Model": 119.0
+        },
+        {
+            "CodeInseeCommune": "81168.0",
+            "N_PV_Registered_ORE": 58.0,
+            "N_PV_Predicted_Model": 17.0
+        },
+        {
+            "CodeInseeCommune": "81170.0",
+            "N_PV_Registered_ORE": 42.0,
+            "N_PV_Predicted_Model": 21.0
+        },
+        {
+            "CodeInseeCommune": "81171.0",
+            "N_PV_Registered_ORE": 58.0,
+            "N_PV_Predicted_Model": 48.0
+        },
+        {
+            "CodeInseeCommune": "81174.0",
+            "N_PV_Registered_ORE": 17.0,
+            "N_PV_Predicted_Model": 19.0
+        },
+        {
+            "CodeInseeCommune": "81178.0",
+            "N_PV_Registered_ORE": 28.0,
+            "N_PV_Predicted_Model": 29.0
+        },
+        {
+            "CodeInseeCommune": "81180.0",
+            "N_PV_Registered_ORE": 26.0,
+            "N_PV_Predicted_Model": 7.0
+        },
+        {
+            "CodeInseeCommune": "81182.0",
+            "N_PV_Registered_ORE": 71.0,
+            "N_PV_Predicted_Model": 80.0
+        },
+        {
+            "CodeInseeCommune": "81186.0",
+            "N_PV_Registered_ORE": 16.0,
+            "N_PV_Predicted_Model": 6.0
+        },
+        {
+            "CodeInseeCommune": "81190.0",
+            "N_PV_Registered_ORE": 19.0,
+            "N_PV_Predicted_Model": 15.0
+        },
+        {
+            "CodeInseeCommune": "81192.0",
+            "N_PV_Registered_ORE": 18.0,
+            "N_PV_Predicted_Model": 22.0
+        },
+        {
+            "CodeInseeCommune": "81195.0",
+            "N_PV_Registered_ORE": 32.0,
+            "N_PV_Predicted_Model": 34.0
+        },
+        {
+            "CodeInseeCommune": "81198.0",
+            "N_PV_Registered_ORE": 16.0,
+            "N_PV_Predicted_Model": 10.0
+        },
+        {
+            "CodeInseeCommune": "81199.0",
+            "N_PV_Registered_ORE": 25.0,
+            "N_PV_Predicted_Model": 15.0
+        },
+        {
+            "CodeInseeCommune": "81201.0",
+            "N_PV_Registered_ORE": 41.0,
+            "N_PV_Predicted_Model": 40.0
+        },
+        {
+            "CodeInseeCommune": "81202.0",
+            "N_PV_Registered_ORE": 52.0,
+            "N_PV_Predicted_Model": 43.0
+        },
+        {
+            "CodeInseeCommune": "81203.0",
+            "N_PV_Registered_ORE": 33.0,
+            "N_PV_Predicted_Model": 24.0
+        },
+        {
+            "CodeInseeCommune": "81204.0",
+            "N_PV_Registered_ORE": 67.0,
+            "N_PV_Predicted_Model": 75.0
+        },
+        {
+            "CodeInseeCommune": "81208.0",
+            "N_PV_Registered_ORE": 25.0,
+            "N_PV_Predicted_Model": 28.0
+        },
+        {
+            "CodeInseeCommune": "81209.0",
+            "N_PV_Registered_ORE": 64.0,
+            "N_PV_Predicted_Model": 76.0
+        },
+        {
+            "CodeInseeCommune": "81211.0",
+            "N_PV_Registered_ORE": 19.0,
+            "N_PV_Predicted_Model": 18.0
+        },
+        {
+            "CodeInseeCommune": "81215.0",
+            "N_PV_Registered_ORE": 21.0,
+            "N_PV_Predicted_Model": 19.0
+        },
+        {
+            "CodeInseeCommune": "81218.0",
+            "N_PV_Registered_ORE": 96.0,
+            "N_PV_Predicted_Model": 99.0
+        },
+        {
+            "CodeInseeCommune": "81219.0",
+            "N_PV_Registered_ORE": 75.0,
+            "N_PV_Predicted_Model": 88.0
+        },
+        {
+            "CodeInseeCommune": "81220.0",
+            "N_PV_Registered_ORE": 113.0,
+            "N_PV_Predicted_Model": 120.0
+        },
+        {
+            "CodeInseeCommune": "81221.0",
+            "N_PV_Registered_ORE": 19.0,
+            "N_PV_Predicted_Model": 14.0
+        },
+        {
+            "CodeInseeCommune": "81222.0",
+            "N_PV_Registered_ORE": 66.0,
+            "N_PV_Predicted_Model": 70.0
+        },
+        {
+            "CodeInseeCommune": "81225.0",
+            "N_PV_Registered_ORE": 27.0,
+            "N_PV_Predicted_Model": 26.0
+        },
+        {
+            "CodeInseeCommune": "81227.0",
+            "N_PV_Registered_ORE": 45.0,
+            "N_PV_Predicted_Model": 43.0
+        },
+        {
+            "CodeInseeCommune": "81228.0",
+            "N_PV_Registered_ORE": 17.0,
+            "N_PV_Predicted_Model": 19.0
+        },
+        {
+            "CodeInseeCommune": "81230.0",
+            "N_PV_Registered_ORE": 39.0,
+            "N_PV_Predicted_Model": 24.0
+        },
+        {
+            "CodeInseeCommune": "81232.0",
+            "N_PV_Registered_ORE": 17.0,
+            "N_PV_Predicted_Model": 19.0
+        },
+        {
+            "CodeInseeCommune": "81233.0",
+            "N_PV_Registered_ORE": 67.0,
+            "N_PV_Predicted_Model": 70.0
+        },
+        {
+            "CodeInseeCommune": "81235.0",
+            "N_PV_Registered_ORE": 24.0,
+            "N_PV_Predicted_Model": 26.0
+        },
+        {
+            "CodeInseeCommune": "81238.0",
+            "N_PV_Registered_ORE": 19.0,
+            "N_PV_Predicted_Model": 18.0
+        },
+        {
+            "CodeInseeCommune": "81239.0",
+            "N_PV_Registered_ORE": 22.0,
+            "N_PV_Predicted_Model": 26.0
+        },
+        {
+            "CodeInseeCommune": "81244.0",
+            "N_PV_Registered_ORE": 27.0,
+            "N_PV_Predicted_Model": 22.0
+        },
+        {
+            "CodeInseeCommune": "81248.0",
+            "N_PV_Registered_ORE": 27.0,
+            "N_PV_Predicted_Model": 21.0
+        },
+        {
+            "CodeInseeCommune": "81249.0",
+            "N_PV_Registered_ORE": 59.0,
+            "N_PV_Predicted_Model": 27.0
+        },
+        {
+            "CodeInseeCommune": "81251.0",
+            "N_PV_Registered_ORE": 38.0,
+            "N_PV_Predicted_Model": 36.0
+        },
+        {
+            "CodeInseeCommune": "81254.0",
+            "N_PV_Registered_ORE": 47.0,
+            "N_PV_Predicted_Model": 22.0
+        },
+        {
+            "CodeInseeCommune": "81257.0",
+            "N_PV_Registered_ORE": 71.0,
+            "N_PV_Predicted_Model": 85.0
+        },
+        {
+            "CodeInseeCommune": "81258.0",
+            "N_PV_Registered_ORE": 16.0,
+            "N_PV_Predicted_Model": 23.0
+        },
+        {
+            "CodeInseeCommune": "81261.0",
+            "N_PV_Registered_ORE": 21.0,
+            "N_PV_Predicted_Model": 29.0
+        },
+        {
+            "CodeInseeCommune": "81271.0",
+            "N_PV_Registered_ORE": 208.0,
+            "N_PV_Predicted_Model": 190.0
+        },
+        {
+            "CodeInseeCommune": "81273.0",
+            "N_PV_Registered_ORE": 84.0,
+            "N_PV_Predicted_Model": 90.0
+        },
+        {
+            "CodeInseeCommune": "81274.0",
+            "N_PV_Registered_ORE": 22.0,
+            "N_PV_Predicted_Model": 16.0
+        },
+        {
+            "CodeInseeCommune": "81275.0",
+            "N_PV_Registered_ORE": 17.0,
+            "N_PV_Predicted_Model": 5.0
+        },
+        {
+            "CodeInseeCommune": "81276.0",
+            "N_PV_Registered_ORE": 29.0,
+            "N_PV_Predicted_Model": 27.0
+        },
+        {
+            "CodeInseeCommune": "81277.0",
+            "N_PV_Registered_ORE": 18.0,
+            "N_PV_Predicted_Model": 19.0
+        },
+        {
+            "CodeInseeCommune": "81280.0",
+            "N_PV_Registered_ORE": 37.0,
+            "N_PV_Predicted_Model": 16.0
+        },
+        {
+            "CodeInseeCommune": "81281.0",
+            "N_PV_Registered_ORE": 49.0,
+            "N_PV_Predicted_Model": 52.0
+        },
+        {
+            "CodeInseeCommune": "81283.0",
+            "N_PV_Registered_ORE": 34.0,
+            "N_PV_Predicted_Model": 37.0
+        },
+        {
+            "CodeInseeCommune": "81284.0",
+            "N_PV_Registered_ORE": 41.0,
+            "N_PV_Predicted_Model": 36.0
+        },
+        {
+            "CodeInseeCommune": "81286.0",
+            "N_PV_Registered_ORE": 16.0,
+            "N_PV_Predicted_Model": 16.0
+        },
+        {
+            "CodeInseeCommune": "81288.0",
+            "N_PV_Registered_ORE": 42.0,
+            "N_PV_Predicted_Model": 59.0
+        },
+        {
+            "CodeInseeCommune": "81289.0",
+            "N_PV_Registered_ORE": 56.0,
+            "N_PV_Predicted_Model": 62.0
+        },
+        {
+            "CodeInseeCommune": "81291.0",
+            "N_PV_Registered_ORE": 22.0,
+            "N_PV_Predicted_Model": 11.0
+        },
+        {
+            "CodeInseeCommune": "81292.0",
+            "N_PV_Registered_ORE": 63.0,
+            "N_PV_Predicted_Model": 18.0
+        },
+        {
+            "CodeInseeCommune": "81294.0",
+            "N_PV_Registered_ORE": 28.0,
+            "N_PV_Predicted_Model": 23.0
+        },
+        {
+            "CodeInseeCommune": "81295.0",
+            "N_PV_Registered_ORE": 24.0,
+            "N_PV_Predicted_Model": 23.0
+        },
+        {
+            "CodeInseeCommune": "81297.0",
+            "N_PV_Registered_ORE": 39.0,
+            "N_PV_Predicted_Model": 33.0
+        },
+        {
+            "CodeInseeCommune": "81299.0",
+            "N_PV_Registered_ORE": 18.0,
+            "N_PV_Predicted_Model": 21.0
+        },
+        {
+            "CodeInseeCommune": "81304.0",
+            "N_PV_Registered_ORE": 20.0,
+            "N_PV_Predicted_Model": 6.0
+        },
+        {
+            "CodeInseeCommune": "81306.0",
+            "N_PV_Registered_ORE": 31.0,
+            "N_PV_Predicted_Model": 27.0
+        },
+        {
+            "CodeInseeCommune": "81307.0",
+            "N_PV_Registered_ORE": 23.0,
+            "N_PV_Predicted_Model": 24.0
+        },
+        {
+            "CodeInseeCommune": "81308.0",
+            "N_PV_Registered_ORE": 33.0,
+            "N_PV_Predicted_Model": 42.0
+        },
+        {
+            "CodeInseeCommune": "81311.0",
+            "N_PV_Registered_ORE": 57.0,
+            "N_PV_Predicted_Model": 49.0
+        },
+        {
+            "CodeInseeCommune": "81312.0",
+            "N_PV_Registered_ORE": 26.0,
+            "N_PV_Predicted_Model": 36.0
+        },
+        {
+            "CodeInseeCommune": "81314.0",
+            "N_PV_Registered_ORE": 22.0,
+            "N_PV_Predicted_Model": 19.0
+        },
+        {
+            "CodeInseeCommune": "81315.0",
+            "N_PV_Registered_ORE": 31.0,
+            "N_PV_Predicted_Model": 33.0
+        },
+        {
+            "CodeInseeCommune": "81317.0",
+            "N_PV_Registered_ORE": 21.0,
+            "N_PV_Predicted_Model": 23.0
+        },
+        {
+            "CodeInseeCommune": "81325.0",
+            "N_PV_Registered_ORE": 52.0,
+            "N_PV_Predicted_Model": 61.0
+        }
+    ],
+    "regression_line": {
+        "x_coords": [
+            16.0,
+            537.0
+        ],
+        "y_coords": [
+            13.286559837111648,
+            445.93016453305967
+        ],
+        "equation": "y = 0.830x",
+        "r_squared": 0.7080595247990411
+    },
+    "axis_labels": {
+        "x": "N<sub>PV, registered</sub> (ORE)",
+        "y": "N<sub>PV, predicted</sub> (Model)"
+    }
+}

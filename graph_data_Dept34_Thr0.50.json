@@ -1,0 +1,1026 @@
+{
+    "title": "Dept 34: PV Prediction vs ORE (Thr 0.50)",
+    "scatter_points": [
+        {
+            "CodeInseeCommune": "34001.0",
+            "N_PV_Registered_ORE": 43.0,
+            "N_PV_Predicted_Model": 52.0
+        },
+        {
+            "CodeInseeCommune": "34002.0",
+            "N_PV_Registered_ORE": 28.0,
+            "N_PV_Predicted_Model": 33.0
+        },
+        {
+            "CodeInseeCommune": "34003.0",
+            "N_PV_Registered_ORE": 314.0,
+            "N_PV_Predicted_Model": 345.0
+        },
+        {
+            "CodeInseeCommune": "34006.0",
+            "N_PV_Registered_ORE": 20.0,
+            "N_PV_Predicted_Model": 16.0
+        },
+        {
+            "CodeInseeCommune": "34009.0",
+            "N_PV_Registered_ORE": 60.0,
+            "N_PV_Predicted_Model": 52.0
+        },
+        {
+            "CodeInseeCommune": "34010.0",
+            "N_PV_Registered_ORE": 46.0,
+            "N_PV_Predicted_Model": 57.0
+        },
+        {
+            "CodeInseeCommune": "34012.0",
+            "N_PV_Registered_ORE": 56.0,
+            "N_PV_Predicted_Model": 40.0
+        },
+        {
+            "CodeInseeCommune": "34013.0",
+            "N_PV_Registered_ORE": 46.0,
+            "N_PV_Predicted_Model": 34.0
+        },
+        {
+            "CodeInseeCommune": "34014.0",
+            "N_PV_Registered_ORE": 20.0,
+            "N_PV_Predicted_Model": 21.0
+        },
+        {
+            "CodeInseeCommune": "34016.0",
+            "N_PV_Registered_ORE": 42.0,
+            "N_PV_Predicted_Model": 23.0
+        },
+        {
+            "CodeInseeCommune": "34017.0",
+            "N_PV_Registered_ORE": 17.0,
+            "N_PV_Predicted_Model": 18.0
+        },
+        {
+            "CodeInseeCommune": "34018.0",
+            "N_PV_Registered_ORE": 25.0,
+            "N_PV_Predicted_Model": 29.0
+        },
+        {
+            "CodeInseeCommune": "34020.0",
+            "N_PV_Registered_ORE": 16.0,
+            "N_PV_Predicted_Model": 21.0
+        },
+        {
+            "CodeInseeCommune": "34022.0",
+            "N_PV_Registered_ORE": 155.0,
+            "N_PV_Predicted_Model": 166.0
+        },
+        {
+            "CodeInseeCommune": "34023.0",
+            "N_PV_Registered_ORE": 108.0,
+            "N_PV_Predicted_Model": 118.0
+        },
+        {
+            "CodeInseeCommune": "34024.0",
+            "N_PV_Registered_ORE": 37.0,
+            "N_PV_Predicted_Model": 36.0
+        },
+        {
+            "CodeInseeCommune": "34025.0",
+            "N_PV_Registered_ORE": 30.0,
+            "N_PV_Predicted_Model": 44.0
+        },
+        {
+            "CodeInseeCommune": "34027.0",
+            "N_PV_Registered_ORE": 51.0,
+            "N_PV_Predicted_Model": 50.0
+        },
+        {
+            "CodeInseeCommune": "34028.0",
+            "N_PV_Registered_ORE": 103.0,
+            "N_PV_Predicted_Model": 119.0
+        },
+        {
+            "CodeInseeCommune": "34031.0",
+            "N_PV_Registered_ORE": 90.0,
+            "N_PV_Predicted_Model": 103.0
+        },
+        {
+            "CodeInseeCommune": "34032.0",
+            "N_PV_Registered_ORE": 636.0,
+            "N_PV_Predicted_Model": 615.0
+        },
+        {
+            "CodeInseeCommune": "34033.0",
+            "N_PV_Registered_ORE": 52.0,
+            "N_PV_Predicted_Model": 2.0
+        },
+        {
+            "CodeInseeCommune": "34035.0",
+            "N_PV_Registered_ORE": 83.0,
+            "N_PV_Predicted_Model": 47.0
+        },
+        {
+            "CodeInseeCommune": "34036.0",
+            "N_PV_Registered_ORE": 42.0,
+            "N_PV_Predicted_Model": 48.0
+        },
+        {
+            "CodeInseeCommune": "34037.0",
+            "N_PV_Registered_ORE": 29.0,
+            "N_PV_Predicted_Model": 50.0
+        },
+        {
+            "CodeInseeCommune": "34039.0",
+            "N_PV_Registered_ORE": 34.0,
+            "N_PV_Predicted_Model": 40.0
+        },
+        {
+            "CodeInseeCommune": "34041.0",
+            "N_PV_Registered_ORE": 24.0,
+            "N_PV_Predicted_Model": 26.0
+        },
+        {
+            "CodeInseeCommune": "34042.0",
+            "N_PV_Registered_ORE": 28.0,
+            "N_PV_Predicted_Model": 15.0
+        },
+        {
+            "CodeInseeCommune": "34047.0",
+            "N_PV_Registered_ORE": 56.0,
+            "N_PV_Predicted_Model": 25.0
+        },
+        {
+            "CodeInseeCommune": "34050.0",
+            "N_PV_Registered_ORE": 42.0,
+            "N_PV_Predicted_Model": 44.0
+        },
+        {
+            "CodeInseeCommune": "34051.0",
+            "N_PV_Registered_ORE": 73.0,
+            "N_PV_Predicted_Model": 92.0
+        },
+        {
+            "CodeInseeCommune": "34052.0",
+            "N_PV_Registered_ORE": 48.0,
+            "N_PV_Predicted_Model": 55.0
+        },
+        {
+            "CodeInseeCommune": "34057.0",
+            "N_PV_Registered_ORE": 240.0,
+            "N_PV_Predicted_Model": 241.0
+        },
+        {
+            "CodeInseeCommune": "34058.0",
+            "N_PV_Registered_ORE": 105.0,
+            "N_PV_Predicted_Model": 109.0
+        },
+        {
+            "CodeInseeCommune": "34060.0",
+            "N_PV_Registered_ORE": 18.0,
+            "N_PV_Predicted_Model": 10.0
+        },
+        {
+            "CodeInseeCommune": "34061.0",
+            "N_PV_Registered_ORE": 16.0,
+            "N_PV_Predicted_Model": 19.0
+        },
+        {
+            "CodeInseeCommune": "34063.0",
+            "N_PV_Registered_ORE": 55.0,
+            "N_PV_Predicted_Model": 60.0
+        },
+        {
+            "CodeInseeCommune": "34067.0",
+            "N_PV_Registered_ORE": 64.0,
+            "N_PV_Predicted_Model": 36.0
+        },
+        {
+            "CodeInseeCommune": "34069.0",
+            "N_PV_Registered_ORE": 96.0,
+            "N_PV_Predicted_Model": 109.0
+        },
+        {
+            "CodeInseeCommune": "34070.0",
+            "N_PV_Registered_ORE": 26.0,
+            "N_PV_Predicted_Model": 27.0
+        },
+        {
+            "CodeInseeCommune": "34073.0",
+            "N_PV_Registered_ORE": 35.0,
+            "N_PV_Predicted_Model": 39.0
+        },
+        {
+            "CodeInseeCommune": "34074.0",
+            "N_PV_Registered_ORE": 70.0,
+            "N_PV_Predicted_Model": 84.0
+        },
+        {
+            "CodeInseeCommune": "34076.0",
+            "N_PV_Registered_ORE": 22.0,
+            "N_PV_Predicted_Model": 28.0
+        },
+        {
+            "CodeInseeCommune": "34077.0",
+            "N_PV_Registered_ORE": 113.0,
+            "N_PV_Predicted_Model": 112.0
+        },
+        {
+            "CodeInseeCommune": "34078.0",
+            "N_PV_Registered_ORE": 42.0,
+            "N_PV_Predicted_Model": 58.0
+        },
+        {
+            "CodeInseeCommune": "34079.0",
+            "N_PV_Registered_ORE": 80.0,
+            "N_PV_Predicted_Model": 27.0
+        },
+        {
+            "CodeInseeCommune": "34081.0",
+            "N_PV_Registered_ORE": 60.0,
+            "N_PV_Predicted_Model": 71.0
+        },
+        {
+            "CodeInseeCommune": "34082.0",
+            "N_PV_Registered_ORE": 123.0,
+            "N_PV_Predicted_Model": 79.0
+        },
+        {
+            "CodeInseeCommune": "34084.0",
+            "N_PV_Registered_ORE": 35.0,
+            "N_PV_Predicted_Model": 45.0
+        },
+        {
+            "CodeInseeCommune": "34087.0",
+            "N_PV_Registered_ORE": 69.0,
+            "N_PV_Predicted_Model": 73.0
+        },
+        {
+            "CodeInseeCommune": "34088.0",
+            "N_PV_Registered_ORE": 129.0,
+            "N_PV_Predicted_Model": 139.0
+        },
+        {
+            "CodeInseeCommune": "34089.0",
+            "N_PV_Registered_ORE": 26.0,
+            "N_PV_Predicted_Model": 38.0
+        },
+        {
+            "CodeInseeCommune": "34090.0",
+            "N_PV_Registered_ORE": 183.0,
+            "N_PV_Predicted_Model": 43.0
+        },
+        {
+            "CodeInseeCommune": "34092.0",
+            "N_PV_Registered_ORE": 22.0,
+            "N_PV_Predicted_Model": 24.0
+        },
+        {
+            "CodeInseeCommune": "34094.0",
+            "N_PV_Registered_ORE": 19.0,
+            "N_PV_Predicted_Model": 27.0
+        },
+        {
+            "CodeInseeCommune": "34095.0",
+            "N_PV_Registered_ORE": 149.0,
+            "N_PV_Predicted_Model": 180.0
+        },
+        {
+            "CodeInseeCommune": "34096.0",
+            "N_PV_Registered_ORE": 17.0,
+            "N_PV_Predicted_Model": 16.0
+        },
+        {
+            "CodeInseeCommune": "34101.0",
+            "N_PV_Registered_ORE": 87.0,
+            "N_PV_Predicted_Model": 105.0
+        },
+        {
+            "CodeInseeCommune": "34102.0",
+            "N_PV_Registered_ORE": 16.0,
+            "N_PV_Predicted_Model": 7.0
+        },
+        {
+            "CodeInseeCommune": "34108.0",
+            "N_PV_Registered_ORE": 311.0,
+            "N_PV_Predicted_Model": 246.0
+        },
+        {
+            "CodeInseeCommune": "34109.0",
+            "N_PV_Registered_ORE": 16.0,
+            "N_PV_Predicted_Model": 18.0
+        },
+        {
+            "CodeInseeCommune": "34110.0",
+            "N_PV_Registered_ORE": 19.0,
+            "N_PV_Predicted_Model": 27.0
+        },
+        {
+            "CodeInseeCommune": "34111.0",
+            "N_PV_Registered_ORE": 38.0,
+            "N_PV_Predicted_Model": 47.0
+        },
+        {
+            "CodeInseeCommune": "34113.0",
+            "N_PV_Registered_ORE": 163.0,
+            "N_PV_Predicted_Model": 149.0
+        },
+        {
+            "CodeInseeCommune": "34114.0",
+            "N_PV_Registered_ORE": 64.0,
+            "N_PV_Predicted_Model": 80.0
+        },
+        {
+            "CodeInseeCommune": "34116.0",
+            "N_PV_Registered_ORE": 257.0,
+            "N_PV_Predicted_Model": 144.0
+        },
+        {
+            "CodeInseeCommune": "34118.0",
+            "N_PV_Registered_ORE": 33.0,
+            "N_PV_Predicted_Model": 23.0
+        },
+        {
+            "CodeInseeCommune": "34119.0",
+            "N_PV_Registered_ORE": 30.0,
+            "N_PV_Predicted_Model": 36.0
+        },
+        {
+            "CodeInseeCommune": "34120.0",
+            "N_PV_Registered_ORE": 152.0,
+            "N_PV_Predicted_Model": 138.0
+        },
+        {
+            "CodeInseeCommune": "34123.0",
+            "N_PV_Registered_ORE": 177.0,
+            "N_PV_Predicted_Model": 182.0
+        },
+        {
+            "CodeInseeCommune": "34126.0",
+            "N_PV_Registered_ORE": 24.0,
+            "N_PV_Predicted_Model": 35.0
+        },
+        {
+            "CodeInseeCommune": "34127.0",
+            "N_PV_Registered_ORE": 44.0,
+            "N_PV_Predicted_Model": 61.0
+        },
+        {
+            "CodeInseeCommune": "34128.0",
+            "N_PV_Registered_ORE": 41.0,
+            "N_PV_Predicted_Model": 43.0
+        },
+        {
+            "CodeInseeCommune": "34129.0",
+            "N_PV_Registered_ORE": 236.0,
+            "N_PV_Predicted_Model": 251.0
+        },
+        {
+            "CodeInseeCommune": "34130.0",
+            "N_PV_Registered_ORE": 42.0,
+            "N_PV_Predicted_Model": 52.0
+        },
+        {
+            "CodeInseeCommune": "34131.0",
+            "N_PV_Registered_ORE": 32.0,
+            "N_PV_Predicted_Model": 30.0
+        },
+        {
+            "CodeInseeCommune": "34134.0",
+            "N_PV_Registered_ORE": 49.0,
+            "N_PV_Predicted_Model": 52.0
+        },
+        {
+            "CodeInseeCommune": "34135.0",
+            "N_PV_Registered_ORE": 75.0,
+            "N_PV_Predicted_Model": 82.0
+        },
+        {
+            "CodeInseeCommune": "34136.0",
+            "N_PV_Registered_ORE": 22.0,
+            "N_PV_Predicted_Model": 28.0
+        },
+        {
+            "CodeInseeCommune": "34139.0",
+            "N_PV_Registered_ORE": 32.0,
+            "N_PV_Predicted_Model": 47.0
+        },
+        {
+            "CodeInseeCommune": "34140.0",
+            "N_PV_Registered_ORE": 63.0,
+            "N_PV_Predicted_Model": 0.0
+        },
+        {
+            "CodeInseeCommune": "34142.0",
+            "N_PV_Registered_ORE": 58.0,
+            "N_PV_Predicted_Model": 102.0
+        },
+        {
+            "CodeInseeCommune": "34145.0",
+            "N_PV_Registered_ORE": 362.0,
+            "N_PV_Predicted_Model": 394.0
+        },
+        {
+            "CodeInseeCommune": "34146.0",
+            "N_PV_Registered_ORE": 93.0,
+            "N_PV_Predicted_Model": 87.0
+        },
+        {
+            "CodeInseeCommune": "34147.0",
+            "N_PV_Registered_ORE": 106.0,
+            "N_PV_Predicted_Model": 135.0
+        },
+        {
+            "CodeInseeCommune": "34148.0",
+            "N_PV_Registered_ORE": 101.0,
+            "N_PV_Predicted_Model": 0.0
+        },
+        {
+            "CodeInseeCommune": "34150.0",
+            "N_PV_Registered_ORE": 177.0,
+            "N_PV_Predicted_Model": 184.0
+        },
+        {
+            "CodeInseeCommune": "34151.0",
+            "N_PV_Registered_ORE": 84.0,
+            "N_PV_Predicted_Model": 108.0
+        },
+        {
+            "CodeInseeCommune": "34152.0",
+            "N_PV_Registered_ORE": 16.0,
+            "N_PV_Predicted_Model": 7.0
+        },
+        {
+            "CodeInseeCommune": "34153.0",
+            "N_PV_Registered_ORE": 118.0,
+            "N_PV_Predicted_Model": 2.0
+        },
+        {
+            "CodeInseeCommune": "34154.0",
+            "N_PV_Registered_ORE": 261.0,
+            "N_PV_Predicted_Model": 271.0
+        },
+        {
+            "CodeInseeCommune": "34155.0",
+            "N_PV_Registered_ORE": 41.0,
+            "N_PV_Predicted_Model": 24.0
+        },
+        {
+            "CodeInseeCommune": "34157.0",
+            "N_PV_Registered_ORE": 194.0,
+            "N_PV_Predicted_Model": 205.0
+        },
+        {
+            "CodeInseeCommune": "34159.0",
+            "N_PV_Registered_ORE": 77.0,
+            "N_PV_Predicted_Model": 84.0
+        },
+        {
+            "CodeInseeCommune": "34161.0",
+            "N_PV_Registered_ORE": 94.0,
+            "N_PV_Predicted_Model": 103.0
+        },
+        {
+            "CodeInseeCommune": "34162.0",
+            "N_PV_Registered_ORE": 59.0,
+            "N_PV_Predicted_Model": 71.0
+        },
+        {
+            "CodeInseeCommune": "34163.0",
+            "N_PV_Registered_ORE": 209.0,
+            "N_PV_Predicted_Model": 103.0
+        },
+        {
+            "CodeInseeCommune": "34164.0",
+            "N_PV_Registered_ORE": 33.0,
+            "N_PV_Predicted_Model": 21.0
+        },
+        {
+            "CodeInseeCommune": "34165.0",
+            "N_PV_Registered_ORE": 62.0,
+            "N_PV_Predicted_Model": 77.0
+        },
+        {
+            "CodeInseeCommune": "34166.0",
+            "N_PV_Registered_ORE": 56.0,
+            "N_PV_Predicted_Model": 64.0
+        },
+        {
+            "CodeInseeCommune": "34169.0",
+            "N_PV_Registered_ORE": 57.0,
+            "N_PV_Predicted_Model": 65.0
+        },
+        {
+            "CodeInseeCommune": "34172.0",
+            "N_PV_Registered_ORE": 665.0,
+            "N_PV_Predicted_Model": 679.0
+        },
+        {
+            "CodeInseeCommune": "34173.0",
+            "N_PV_Registered_ORE": 34.0,
+            "N_PV_Predicted_Model": 41.0
+        },
+        {
+            "CodeInseeCommune": "34174.0",
+            "N_PV_Registered_ORE": 35.0,
+            "N_PV_Predicted_Model": 42.0
+        },
+        {
+            "CodeInseeCommune": "34176.0",
+            "N_PV_Registered_ORE": 71.0,
+            "N_PV_Predicted_Model": 67.0
+        },
+        {
+            "CodeInseeCommune": "34177.0",
+            "N_PV_Registered_ORE": 34.0,
+            "N_PV_Predicted_Model": 20.0
+        },
+        {
+            "CodeInseeCommune": "34178.0",
+            "N_PV_Registered_ORE": 70.0,
+            "N_PV_Predicted_Model": 93.0
+        },
+        {
+            "CodeInseeCommune": "34179.0",
+            "N_PV_Registered_ORE": 32.0,
+            "N_PV_Predicted_Model": 35.0
+        },
+        {
+            "CodeInseeCommune": "34180.0",
+            "N_PV_Registered_ORE": 29.0,
+            "N_PV_Predicted_Model": 33.0
+        },
+        {
+            "CodeInseeCommune": "34181.0",
+            "N_PV_Registered_ORE": 31.0,
+            "N_PV_Predicted_Model": 0.0
+        },
+        {
+            "CodeInseeCommune": "34182.0",
+            "N_PV_Registered_ORE": 36.0,
+            "N_PV_Predicted_Model": 47.0
+        },
+        {
+            "CodeInseeCommune": "34183.0",
+            "N_PV_Registered_ORE": 69.0,
+            "N_PV_Predicted_Model": 98.0
+        },
+        {
+            "CodeInseeCommune": "34189.0",
+            "N_PV_Registered_ORE": 27.0,
+            "N_PV_Predicted_Model": 34.0
+        },
+        {
+            "CodeInseeCommune": "34191.0",
+            "N_PV_Registered_ORE": 18.0,
+            "N_PV_Predicted_Model": 19.0
+        },
+        {
+            "CodeInseeCommune": "34192.0",
+            "N_PV_Registered_ORE": 56.0,
+            "N_PV_Predicted_Model": 59.0
+        },
+        {
+            "CodeInseeCommune": "34194.0",
+            "N_PV_Registered_ORE": 142.0,
+            "N_PV_Predicted_Model": 80.0
+        },
+        {
+            "CodeInseeCommune": "34197.0",
+            "N_PV_Registered_ORE": 22.0,
+            "N_PV_Predicted_Model": 28.0
+        },
+        {
+            "CodeInseeCommune": "34198.0",
+            "N_PV_Registered_ORE": 207.0,
+            "N_PV_Predicted_Model": 217.0
+        },
+        {
+            "CodeInseeCommune": "34199.0",
+            "N_PV_Registered_ORE": 105.0,
+            "N_PV_Predicted_Model": 119.0
+        },
+        {
+            "CodeInseeCommune": "34202.0",
+            "N_PV_Registered_ORE": 108.0,
+            "N_PV_Predicted_Model": 115.0
+        },
+        {
+            "CodeInseeCommune": "34203.0",
+            "N_PV_Registered_ORE": 32.0,
+            "N_PV_Predicted_Model": 28.0
+        },
+        {
+            "CodeInseeCommune": "34204.0",
+            "N_PV_Registered_ORE": 52.0,
+            "N_PV_Predicted_Model": 32.0
+        },
+        {
+            "CodeInseeCommune": "34207.0",
+            "N_PV_Registered_ORE": 32.0,
+            "N_PV_Predicted_Model": 40.0
+        },
+        {
+            "CodeInseeCommune": "34208.0",
+            "N_PV_Registered_ORE": 24.0,
+            "N_PV_Predicted_Model": 13.0
+        },
+        {
+            "CodeInseeCommune": "34209.0",
+            "N_PV_Registered_ORE": 93.0,
+            "N_PV_Predicted_Model": 98.0
+        },
+        {
+            "CodeInseeCommune": "34210.0",
+            "N_PV_Registered_ORE": 49.0,
+            "N_PV_Predicted_Model": 65.0
+        },
+        {
+            "CodeInseeCommune": "34213.0",
+            "N_PV_Registered_ORE": 82.0,
+            "N_PV_Predicted_Model": 105.0
+        },
+        {
+            "CodeInseeCommune": "34214.0",
+            "N_PV_Registered_ORE": 28.0,
+            "N_PV_Predicted_Model": 31.0
+        },
+        {
+            "CodeInseeCommune": "34215.0",
+            "N_PV_Registered_ORE": 27.0,
+            "N_PV_Predicted_Model": 32.0
+        },
+        {
+            "CodeInseeCommune": "34217.0",
+            "N_PV_Registered_ORE": 122.0,
+            "N_PV_Predicted_Model": 131.0
+        },
+        {
+            "CodeInseeCommune": "34222.0",
+            "N_PV_Registered_ORE": 23.0,
+            "N_PV_Predicted_Model": 24.0
+        },
+        {
+            "CodeInseeCommune": "34223.0",
+            "N_PV_Registered_ORE": 29.0,
+            "N_PV_Predicted_Model": 34.0
+        },
+        {
+            "CodeInseeCommune": "34224.0",
+            "N_PV_Registered_ORE": 38.0,
+            "N_PV_Predicted_Model": 38.0
+        },
+        {
+            "CodeInseeCommune": "34225.0",
+            "N_PV_Registered_ORE": 84.0,
+            "N_PV_Predicted_Model": 93.0
+        },
+        {
+            "CodeInseeCommune": "34226.0",
+            "N_PV_Registered_ORE": 40.0,
+            "N_PV_Predicted_Model": 37.0
+        },
+        {
+            "CodeInseeCommune": "34227.0",
+            "N_PV_Registered_ORE": 53.0,
+            "N_PV_Predicted_Model": 65.0
+        },
+        {
+            "CodeInseeCommune": "34232.0",
+            "N_PV_Registered_ORE": 21.0,
+            "N_PV_Predicted_Model": 23.0
+        },
+        {
+            "CodeInseeCommune": "34237.0",
+            "N_PV_Registered_ORE": 43.0,
+            "N_PV_Predicted_Model": 59.0
+        },
+        {
+            "CodeInseeCommune": "34239.0",
+            "N_PV_Registered_ORE": 119.0,
+            "N_PV_Predicted_Model": 141.0
+        },
+        {
+            "CodeInseeCommune": "34240.0",
+            "N_PV_Registered_ORE": 125.0,
+            "N_PV_Predicted_Model": 8.0
+        },
+        {
+            "CodeInseeCommune": "34241.0",
+            "N_PV_Registered_ORE": 22.0,
+            "N_PV_Predicted_Model": 17.0
+        },
+        {
+            "CodeInseeCommune": "34242.0",
+            "N_PV_Registered_ORE": 31.0,
+            "N_PV_Predicted_Model": 31.0
+        },
+        {
+            "CodeInseeCommune": "34243.0",
+            "N_PV_Registered_ORE": 28.0,
+            "N_PV_Predicted_Model": 34.0
+        },
+        {
+            "CodeInseeCommune": "34244.0",
+            "N_PV_Registered_ORE": 64.0,
+            "N_PV_Predicted_Model": 62.0
+        },
+        {
+            "CodeInseeCommune": "34245.0",
+            "N_PV_Registered_ORE": 22.0,
+            "N_PV_Predicted_Model": 26.0
+        },
+        {
+            "CodeInseeCommune": "34246.0",
+            "N_PV_Registered_ORE": 70.0,
+            "N_PV_Predicted_Model": 81.0
+        },
+        {
+            "CodeInseeCommune": "34247.0",
+            "N_PV_Registered_ORE": 183.0,
+            "N_PV_Predicted_Model": 103.0
+        },
+        {
+            "CodeInseeCommune": "34248.0",
+            "N_PV_Registered_ORE": 56.0,
+            "N_PV_Predicted_Model": 24.0
+        },
+        {
+            "CodeInseeCommune": "34249.0",
+            "N_PV_Registered_ORE": 61.0,
+            "N_PV_Predicted_Model": 71.0
+        },
+        {
+            "CodeInseeCommune": "34254.0",
+            "N_PV_Registered_ORE": 31.0,
+            "N_PV_Predicted_Model": 36.0
+        },
+        {
+            "CodeInseeCommune": "34255.0",
+            "N_PV_Registered_ORE": 422.0,
+            "N_PV_Predicted_Model": 234.0
+        },
+        {
+            "CodeInseeCommune": "34256.0",
+            "N_PV_Registered_ORE": 20.0,
+            "N_PV_Predicted_Model": 22.0
+        },
+        {
+            "CodeInseeCommune": "34258.0",
+            "N_PV_Registered_ORE": 56.0,
+            "N_PV_Predicted_Model": 65.0
+        },
+        {
+            "CodeInseeCommune": "34259.0",
+            "N_PV_Registered_ORE": 84.0,
+            "N_PV_Predicted_Model": 107.0
+        },
+        {
+            "CodeInseeCommune": "34263.0",
+            "N_PV_Registered_ORE": 22.0,
+            "N_PV_Predicted_Model": 14.0
+        },
+        {
+            "CodeInseeCommune": "34265.0",
+            "N_PV_Registered_ORE": 41.0,
+            "N_PV_Predicted_Model": 17.0
+        },
+        {
+            "CodeInseeCommune": "34267.0",
+            "N_PV_Registered_ORE": 18.0,
+            "N_PV_Predicted_Model": 21.0
+        },
+        {
+            "CodeInseeCommune": "34268.0",
+            "N_PV_Registered_ORE": 20.0,
+            "N_PV_Predicted_Model": 20.0
+        },
+        {
+            "CodeInseeCommune": "34270.0",
+            "N_PV_Registered_ORE": 204.0,
+            "N_PV_Predicted_Model": 230.0
+        },
+        {
+            "CodeInseeCommune": "34272.0",
+            "N_PV_Registered_ORE": 80.0,
+            "N_PV_Predicted_Model": 91.0
+        },
+        {
+            "CodeInseeCommune": "34274.0",
+            "N_PV_Registered_ORE": 89.0,
+            "N_PV_Predicted_Model": 47.0
+        },
+        {
+            "CodeInseeCommune": "34276.0",
+            "N_PV_Registered_ORE": 219.0,
+            "N_PV_Predicted_Model": 120.0
+        },
+        {
+            "CodeInseeCommune": "34280.0",
+            "N_PV_Registered_ORE": 21.0,
+            "N_PV_Predicted_Model": 16.0
+        },
+        {
+            "CodeInseeCommune": "34281.0",
+            "N_PV_Registered_ORE": 132.0,
+            "N_PV_Predicted_Model": 73.0
+        },
+        {
+            "CodeInseeCommune": "34282.0",
+            "N_PV_Registered_ORE": 59.0,
+            "N_PV_Predicted_Model": 31.0
+        },
+        {
+            "CodeInseeCommune": "34288.0",
+            "N_PV_Registered_ORE": 30.0,
+            "N_PV_Predicted_Model": 46.0
+        },
+        {
+            "CodeInseeCommune": "34289.0",
+            "N_PV_Registered_ORE": 59.0,
+            "N_PV_Predicted_Model": 53.0
+        },
+        {
+            "CodeInseeCommune": "34290.0",
+            "N_PV_Registered_ORE": 29.0,
+            "N_PV_Predicted_Model": 21.0
+        },
+        {
+            "CodeInseeCommune": "34293.0",
+            "N_PV_Registered_ORE": 16.0,
+            "N_PV_Predicted_Model": 23.0
+        },
+        {
+            "CodeInseeCommune": "34294.0",
+            "N_PV_Registered_ORE": 25.0,
+            "N_PV_Predicted_Model": 28.0
+        },
+        {
+            "CodeInseeCommune": "34295.0",
+            "N_PV_Registered_ORE": 21.0,
+            "N_PV_Predicted_Model": 31.0
+        },
+        {
+            "CodeInseeCommune": "34296.0",
+            "N_PV_Registered_ORE": 18.0,
+            "N_PV_Predicted_Model": 7.0
+        },
+        {
+            "CodeInseeCommune": "34297.0",
+            "N_PV_Registered_ORE": 26.0,
+            "N_PV_Predicted_Model": 12.0
+        },
+        {
+            "CodeInseeCommune": "34298.0",
+            "N_PV_Registered_ORE": 119.0,
+            "N_PV_Predicted_Model": 140.0
+        },
+        {
+            "CodeInseeCommune": "34299.0",
+            "N_PV_Registered_ORE": 125.0,
+            "N_PV_Predicted_Model": 156.0
+        },
+        {
+            "CodeInseeCommune": "34300.0",
+            "N_PV_Registered_ORE": 109.0,
+            "N_PV_Predicted_Model": 130.0
+        },
+        {
+            "CodeInseeCommune": "34301.0",
+            "N_PV_Registered_ORE": 132.0,
+            "N_PV_Predicted_Model": 90.0
+        },
+        {
+            "CodeInseeCommune": "34304.0",
+            "N_PV_Registered_ORE": 18.0,
+            "N_PV_Predicted_Model": 24.0
+        },
+        {
+            "CodeInseeCommune": "34307.0",
+            "N_PV_Registered_ORE": 77.0,
+            "N_PV_Predicted_Model": 86.0
+        },
+        {
+            "CodeInseeCommune": "34309.0",
+            "N_PV_Registered_ORE": 141.0,
+            "N_PV_Predicted_Model": 158.0
+        },
+        {
+            "CodeInseeCommune": "34310.0",
+            "N_PV_Registered_ORE": 76.0,
+            "N_PV_Predicted_Model": 87.0
+        },
+        {
+            "CodeInseeCommune": "34311.0",
+            "N_PV_Registered_ORE": 42.0,
+            "N_PV_Predicted_Model": 53.0
+        },
+        {
+            "CodeInseeCommune": "34312.0",
+            "N_PV_Registered_ORE": 46.0,
+            "N_PV_Predicted_Model": 49.0
+        },
+        {
+            "CodeInseeCommune": "34314.0",
+            "N_PV_Registered_ORE": 32.0,
+            "N_PV_Predicted_Model": 0.0
+        },
+        {
+            "CodeInseeCommune": "34320.0",
+            "N_PV_Registered_ORE": 223.0,
+            "N_PV_Predicted_Model": 113.0
+        },
+        {
+            "CodeInseeCommune": "34321.0",
+            "N_PV_Registered_ORE": 55.0,
+            "N_PV_Predicted_Model": 53.0
+        },
+        {
+            "CodeInseeCommune": "34322.0",
+            "N_PV_Registered_ORE": 56.0,
+            "N_PV_Predicted_Model": 31.0
+        },
+        {
+            "CodeInseeCommune": "34324.0",
+            "N_PV_Registered_ORE": 24.0,
+            "N_PV_Predicted_Model": 44.0
+        },
+        {
+            "CodeInseeCommune": "34325.0",
+            "N_PV_Registered_ORE": 25.0,
+            "N_PV_Predicted_Model": 23.0
+        },
+        {
+            "CodeInseeCommune": "34327.0",
+            "N_PV_Registered_ORE": 156.0,
+            "N_PV_Predicted_Model": 64.0
+        },
+        {
+            "CodeInseeCommune": "34328.0",
+            "N_PV_Registered_ORE": 26.0,
+            "N_PV_Predicted_Model": 32.0
+        },
+        {
+            "CodeInseeCommune": "34329.0",
+            "N_PV_Registered_ORE": 59.0,
+            "N_PV_Predicted_Model": 68.0
+        },
+        {
+            "CodeInseeCommune": "34332.0",
+            "N_PV_Registered_ORE": 133.0,
+            "N_PV_Predicted_Model": 137.0
+        },
+        {
+            "CodeInseeCommune": "34333.0",
+            "N_PV_Registered_ORE": 40.0,
+            "N_PV_Predicted_Model": 50.0
+        },
+        {
+            "CodeInseeCommune": "34336.0",
+            "N_PV_Registered_ORE": 85.0,
+            "N_PV_Predicted_Model": 86.0
+        },
+        {
+            "CodeInseeCommune": "34337.0",
+            "N_PV_Registered_ORE": 161.0,
+            "N_PV_Predicted_Model": 183.0
+        },
+        {
+            "CodeInseeCommune": "34340.0",
+            "N_PV_Registered_ORE": 44.0,
+            "N_PV_Predicted_Model": 44.0
+        },
+        {
+            "CodeInseeCommune": "34341.0",
+            "N_PV_Registered_ORE": 96.0,
+            "N_PV_Predicted_Model": 90.0
+        },
+        {
+            "CodeInseeCommune": "34342.0",
+            "N_PV_Registered_ORE": 19.0,
+            "N_PV_Predicted_Model": 11.0
+        },
+        {
+            "CodeInseeCommune": "34343.0",
+            "N_PV_Registered_ORE": 48.0,
+            "N_PV_Predicted_Model": 31.0
+        },
+        {
+            "CodeInseeCommune": "34344.0",
+            "N_PV_Registered_ORE": 43.0,
+            "N_PV_Predicted_Model": 52.0
+        }
+    ],
+    "regression_line": {
+        "x_coords": [
+            16.0,
+            665.0
+        ],
+        "y_coords": [
+            14.609671686995767,
+            607.2144794907616
+        ],
+        "equation": "y = 0.913x",
+        "r_squared": 0.865528503445284
+    },
+    "axis_labels": {
+        "x": "N<sub>PV, registered</sub> (ORE)",
+        "y": "N<sub>PV, predicted</sub> (Model)"
+    }
+}

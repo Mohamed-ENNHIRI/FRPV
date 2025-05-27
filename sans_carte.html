@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'self';
+                   script-src 'self' https://cdn.plot.ly 'unsafe-inline';
+                   style-src 'self' 'unsafe-inline';
+                   img-src 'self' data: https://images.plot.ly;
+                   connect-src 'self';">
+
+    <title>Interactive PV Analysis by Department</title>
+    <script defer src="https://cdn.plot.ly/plotly-3.0.1.min.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 20px; /* Padding for the entire page viewport */
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center; /* Center the main-wrapper */
+        }
+        .main-wrapper {
+            width: 100%;
+            max-width: 1600px; /* Max width for the main content block */
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .controls {
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.07); /* Softened shadow */
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap; /* Allow controls to wrap on smaller screens */
+        }
+        .controls label {
+            font-weight: 600;
+            color: #333;
+        }
+        .controls select {
+            padding: 10px; /* Slightly larger padding */
+            border-radius: 6px; /* Slightly more rounded */
+            border: 1px solid #ccc;
+            min-width: 220px; /* Adjusted min-width */
+            font-size: 0.95em;
+        }
+        .content-area {
+            display: flex;
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+            gap: 20px;
+            align-items: flex-start; /* Align graph and info panel to the top */
+        }
+        #graphHost {
+            flex: 3; /* Give graph a bit more space relative to info panel */
+            min-width: 400px; /* Adjusted for responsiveness */
+            max-width: 100%; /* Ensure it doesn't overflow on very small flex basis */
+            height: 550px;
+            background-color: #fff;
+            padding: 20px; /* Increased padding */
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+            position: relative;
+        }
+        #infoPanel {
+            flex: 1.5; /* Adjusted flex ratio */
+            min-width: 280px; /* Adjusted for responsiveness */
+            max-width: 100%;
+            background-color: #fff;
+            padding: 20px; /* Increased padding */
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+            height: fit-content; /* So it doesn't stretch unnecessarily */
+        }
+        #infoPanel h3 {
+            margin-top: 0;
+            color: #2c3e50; /* Darker, more modern color */
+            border-bottom: 1px solid #ecf0f1; /* Lighter border */
+            padding-bottom: 10px;
+            font-size: 1.15em;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 15px; /* Increased margin */
+        }
+        th, td {
+            border: 1px solid #ecf0f1; /* Lighter borders for table */
+            padding: 12px; /* Increased padding */
+            text-align: left;
+            font-size: 0.9em;
+        }
+        th {
+            background-color: #f9fafb; /* Very light grey for header */
+            color: #555;
+            font-weight: 600;
+        }
+        td {
+            color: #333;
+        }
+        #clickPrompt {
+            font-size: 0.9em;
+            color: #7f8c8d; /* Softer color */
+            margin-top: 15px;
+            text-align: center; /* Centered prompt */
+        }
+        .error-message {
+            padding: 12px;
+            background-color: #ffebee;
+            color: #c62828;
+            border: 1px solid #ef9a9a;
+            border-radius: 6px; /* Consistent rounding */
+            margin-top: 10px;
+        }
+        #pvPredictionGraph {
+             width: 100% !important;
+             height: 100% !important;
+        }
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            #graphHost {
+                min-width: 100%; /* Full width on smaller screens */
+                height: 450px; /* Adjust height for smaller screens */
+            }
+            #infoPanel {
+                min-width: 100%; /* Full width on smaller screens */
+            }
+            .controls select {
+                width: 100%; /* Make select full width in controls on small screens */
+            }
+        }
+         @media (max-width: 480px) {
+            body {
+                padding: 10px; /* Reduce page padding on very small screens */
+            }
+            .main-wrapper {
+                gap: 15px;
+            }
+            .controls, #graphHost, #infoPanel {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-wrapper">
+        <div class="controls">
+            <label for="departmentSelect">Choose a Department:</label>
+            <select id="departmentSelect">
+                <option value="">-- Select a Department --</option>
+            </select>
+        </div>
+
+        <div class="content-area">
+            <div id="graphHost">
+                <p id="graphPlaceholder">Please select a department to view the graph.</p>
+            </div>
+
+            <div id="infoPanel">
+                <h3>Selected Municipality Details</h3>
+                <table id="detailsTable">
+                    <thead>
+                        <tr><th>Attribute</th><th>Value</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Municipality (Code INSEE)</td><td id="val-municipality">-</td></tr>
+                        <tr><td>PV Registered (ORE)</td><td id="val-pv-registered">-</td></tr>
+                        <tr><td>PV Predicted (Model)</td><td id="val-pv-predicted">-</td></tr>
+                        <tr><td>Nom Standard</td><td id="val-nom-standard">-</td></tr>
+                        <tr><td>Région</td><td id="val-reg-nom">-</td></tr>
+                        <tr><td>Département (Nom)</td><td id="val-dep-nom">-</td></tr>
+                        <tr><td>Superficie (km²)</td><td id="val-superficie">-</td></tr>
+                    </tbody>
+                </table>
+                <p id="clickPrompt">Click on a data point in the graph to see its details here.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        console.log("Main page script block parsing started.");
+
+        const departments = [
+            { name: "01 - Ain", value: "01" }, { name: "02 - Aisne", value: "02" }, { name: "03 - Allier", value: "03" }, { name: "04 - Alpes-de-Haute-Provence", value: "04" }, { name: "05 - Hautes-Alpes", value: "05" }, { name: "06 - Alpes-Maritimes", value: "06" }, { name: "07 - Ardèche", value: "07" }, { name: "08 - Ardennes", value: "08" }, { name: "09 - Ariège", value: "09" }, { name: "10 - Aube", value: "10" }, { name: "11 - Aude", value: "11" }, { name: "12 - Aveyron", value: "12" }, { name: "13 - Bouches-du-Rhône", value: "13" }, { name: "14 - Calvados", value: "14" }, { name: "15 - Cantal", value: "15" }, { name: "16 - Charente", value: "16" }, { name: "17 - Charente-Maritime", value: "17" }, { name: "18 - Cher", value: "18" }, { name: "19 - Corrèze", value: "19" }, { name: "2A - Corse-du-Sud", value: "2A" }, { name: "2B - Haute-Corse", value: "2B" }, { name: "21 - Côte-d'Or", value: "21" }, { name: "22 - Côtes-d'Armor", value: "22" }, { name: "23 - Creuse", value: "23" }, { name: "24 - Dordogne", value: "24" }, { name: "25 - Doubs", value: "25" }, { name: "26 - Drôme", value: "26" }, { name: "27 - Eure", value: "27" }, { name: "28 - Eure-et-Loir", value: "28" }, { name: "29 - Finistère", value: "29" }, { name: "30 - Gard", value: "30" }, { name: "31 - Haute-Garonne", value: "31" }, { name: "32 - Gers", value: "32" }, { name: "33 - Gironde", value: "33" }, { name: "34 - Hérault", value: "34" }, { name: "35 - Ille-et-Vilaine", value: "35" }, { name: "36 - Indre", value: "36" }, { name: "37 - Indre-et-Loire", value: "37" }, { name: "38 - Isère", value: "38" }, { name: "39 - Jura", value: "39" }, { name: "40 - Landes", value: "40" }, { name: "41 - Loir-et-Cher", value: "41" }, { name: "42 - Loire", value: "42" }, { name: "43 - Haute-Loire", value: "43" }, { name: "44 - Loire-Atlantique", value: "44" }, { name: "45 - Loiret", value: "45" }, { name: "46 - Lot", value: "46" }, { name: "47 - Lot-et-Garonne", value: "47" }, { name: "48 - Lozère", value: "48" }, { name: "49 - Maine-et-Loire", value: "49" }, { name: "50 - Manche", value: "50" }, { name: "51 - Marne", value: "51" }, { name: "52 - Haute-Marne", value: "52" }, { name: "53 - Mayenne", value: "53" }, { name: "54 - Meurthe-et-Moselle", value: "54" }, { name: "55 - Meuse", value: "55" }, { name: "56 - Morbihan", value: "56" }, { name: "57 - Moselle", value: "57" }, { name: "58 - Nièvre", value: "58" }, { name: "59 - Nord", value: "59" }, { name: "60 - Oise", value: "60" }, { name: "61 - Orne", value: "61" }, { name: "62 - Pas-de-Calais", value: "62" }, { name: "63 - Puy-de-Dôme", value: "63" }, { name: "64 - Pyrénées-Atlantiques", value: "64" }, { name: "65 - Hautes-Pyrénées", value: "65" }, { name: "66 - Pyrénées-Orientales", value: "66" }, { name: "67 - Bas-Rhin", value: "67" }, { name: "68 - Haut-Rhin", value: "68" }, { name: "69 - Rhône", value: "69" }, { name: "70 - Haute-Saône", value: "70" }, { name: "71 - Saône-et-Loire", value: "71" }, { name: "72 - Sarthe", value: "72" }, { name: "73 - Savoie", value: "73" }, { name: "74 - Haute-Savoie", value: "74" }, { name: "75 - Paris", value: "75" }, { name: "76 - Seine-Maritime", value: "76" }, { name: "77 - Seine-et-Marne", value: "77" }, { name: "78 - Yvelines", value: "78" }, { name: "79 - Deux-Sèvres", value: "79" }, { name: "80 - Somme", value: "80" }, { name: "81 - Tarn", value: "81" }, { name: "82 - Tarn-et-Garonne", value: "82" }, { name: "83 - Var", value: "83" }, { name: "84 - Vaucluse", value: "84" }, { name: "85 - Vendée", value: "85" }, { name: "86 - Vienne", value: "86" }, { name: "87 - Haute-Vienne", value: "87" }, { name: "88 - Vosges", value: "88" }, { name: "89 - Yonne", value: "89" }, { name: "90 - Territoire de Belfort", value: "90" }, { name: "91 - Essonne", value: "91" }, { name: "92 - Hauts-de-Seine", value: "92" }, { name: "93 - Seine-Saint-Denis", value: "93" }, { name: "94 - Val-de-Marne", value: "94" }, { name: "95 - Val-d'Oise", value: "95" }
+        ];
+
+        const municipalityDataStore = {};
+        const csvFilePath = 'communes-france-2025.csv'; // Define your CSV file path here
+
+        /**
+         * Parses a single line of CSV text, respecting quotes and escaped quotes.
+         * @param {string} line - A single line from a CSV file.
+         * @returns {string[]} An array of strings representing the values in the CSV line.
+         */
+        function parseCSVLine(line) {
+            const values = [];
+            let currentValue = '';
+            let inQuotes = false;
+
+            for (let i = 0; i < line.length; i++) {
+                const char = line[i];
+
+                if (char === '"') {
+                    if (inQuotes && i + 1 < line.length && line[i + 1] === '"') {
+                        // This is an escaped quote (e.g., "" inside a quoted field)
+                        currentValue += '"';
+                        i++; // Skip the next quote
+                    } else {
+                        // This is the start or end of a quoted field
+                        inQuotes = !inQuotes;
+                    }
+                } else if (char === ',' && !inQuotes) {
+                    values.push(currentValue.trim());
+                    currentValue = '';
+                } else {
+                    currentValue += char;
+                }
+            }
+            values.push(currentValue.trim()); // Add the last value
+            return values;
+        }
+
+        function parseCSVData(csvString) {
+            const lines = csvString.trim().split('\n');
+            if (lines.length < 1) {
+                displayError("CSV data is empty or invalid.", "infoPanel");
+                return;
+            }
+            // Use parseCSVLine for the header to correctly handle potential quotes in header names
+            const headers = parseCSVLine(lines[0]);
+            const codeInseeIndex = headers.indexOf('code_insee');
+            const nomStandardIndex = headers.indexOf('nom_standard');
+            const regNomIndex = headers.indexOf('reg_nom');
+            const depNomIndex = headers.indexOf('dep_nom');
+            const superficieKm2Index = headers.indexOf('superficie_km2');
+
+            if ([codeInseeIndex, nomStandardIndex, regNomIndex, depNomIndex, superficieKm2Index].some(index => index === -1)) {
+                console.error("CSV parsing error: One or more required column headers not found in CSV.", headers);
+                let missingCols = ['code_insee', 'nom_standard', 'reg_nom', 'dep_nom', 'superficie_km2'].filter(col => headers.indexOf(col) === -1);
+                displayError(`Failed to parse municipality CSV data: critical columns missing: ${missingCols.join(', ')}. Check CSV header.`, "infoPanel");
+                return;
+            }
+
+            for (let i = 1; i < lines.length; i++) {
+                if (lines[i].trim() === "") continue; // Skip empty lines
+                const values = parseCSVLine(lines[i]); // Use the robust parser for data lines
+
+                // Check if the number of parsed values matches the number of headers
+                // This is a basic check for malformed lines, but might not catch all issues.
+                if (values.length !== headers.length) {
+                    console.warn(`Skipping malformed CSV line ${i + 1}: Expected ${headers.length} values, but got ${values.length}. Line content: "${lines[i]}"`);
+                    continue; // Skip this line
+                }
+
+                const codeInsee = values[codeInseeIndex]; // Already trimmed by parseCSVLine
+                if (codeInsee) { // Check if codeInsee is not empty
+                    municipalityDataStore[codeInsee] = {
+                        nom_standard: values[nomStandardIndex] !== undefined ? values[nomStandardIndex] : 'N/A',
+                        reg_nom: values[regNomIndex] !== undefined ? values[regNomIndex] : 'N/A',
+                        dep_nom: values[depNomIndex] !== undefined ? values[depNomIndex] : 'N/A',
+                        superficie_km2: values[superficieKm2Index] !== undefined ? values[superficieKm2Index] : 'N/A'
+                    };
+                } else {
+                     console.warn(`Skipping CSV line ${i + 1} due to empty 'code_insee'. Line: "${lines[i]}"`);
+                }
+            }
+            console.log("Municipality CSV data parsed and stored. Entries:", Object.keys(municipalityDataStore).length);
+             if (Object.keys(municipalityDataStore).length === 0 && lines.length > 1) {
+                console.warn("CSV data was parsed, but no entries were stored. Check 'code_insee' column and CSV integrity.");
+                displayError("Warning: CSV data parsed, but no valid municipality entries found. Check CSV structure and 'code_insee' column.", "infoPanel");
+            }
+        }
+
+        async function loadCSVFile(filePath) {
+            console.log(`Attempting to load CSV from: ${filePath}`);
+            try {
+                const response = await fetch(filePath);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status} while fetching ${filePath}`);
+                }
+                const csvText = await response.text();
+                if (!csvText || csvText.trim() === "") {
+                    throw new Error("Fetched CSV file is empty.");
+                }
+                parseCSVData(csvText);
+            } catch (error) {
+                console.error("Could not load or parse CSV file:", error);
+                displayError(`Failed to load municipality data from <strong>${filePath}</strong>. Please ensure the file exists in the same directory as the HTML page and is accessible. <br>Error: ${error.message}`, "infoPanel");
+            }
+        }
+
+        function populateDepartmentSelector() {
+            const selectElement = document.getElementById('departmentSelect');
+            departments.forEach(dept => {
+                const option = document.createElement('option');
+                option.value = dept.value;
+                option.textContent = dept.name;
+                selectElement.appendChild(option);
+            });
+        }
+
+        function displayError(message, containerId = 'graphHost') {
+            const container = document.getElementById(containerId);
+            if (container) {
+                const graphPlaceholder = document.getElementById('graphPlaceholder');
+                if(graphPlaceholder && containerId === 'graphHost') graphPlaceholder.style.display = 'none';
+
+                if(containerId === 'graphHost' && container.firstChild && container.firstChild.classList && container.firstChild.classList.contains('plotly-graph-div')) {
+                    Plotly.purge(container);
+                } else {
+                    const existingError = container.querySelector('.error-message');
+                    if(existingError) existingError.remove();
+                }
+                const oldErrorMessage = container.querySelector('.error-message');
+                if (oldErrorMessage) oldErrorMessage.remove();
+
+
+                const errorDiv = document.createElement('div');
+                errorDiv.className = 'error-message';
+                errorDiv.innerHTML = message; 
+                if (containerId === 'infoPanel' && container.firstChild) {
+                    container.insertBefore(errorDiv, container.firstChild);
+                } else {
+                    container.appendChild(errorDiv);
+                }
+            }
+            console.error(message);
+        }
+
+        async function drawPlotlyGraph(departmentNumber) {
+            console.log(`drawPlotlyGraph: Preparing to draw graph for department ${departmentNumber}.`);
+            const graphHostDiv = document.getElementById('graphHost');
+            const graphPlaceholder = document.getElementById('graphPlaceholder');
+
+            if (graphHostDiv.firstChild && graphHostDiv.firstChild.classList && graphHostDiv.firstChild.classList.contains('plotly-graph-div')) {
+                Plotly.purge(graphHostDiv);
+            } else {
+                graphHostDiv.innerHTML = ''; 
+            }
+            const existingError = graphHostDiv.querySelector('.error-message');
+            if(existingError) existingError.remove();
+            
+            if(graphPlaceholder) graphPlaceholder.style.display = 'none';
+
+
+            const threshold = "0.50"; 
+            const jsonDataFile = `graph_data_Dept${departmentNumber}_Thr${threshold}.json`;
+
+            try {
+                console.log("drawPlotlyGraph: About to fetch graph data from JSON:", jsonDataFile);
+                const response = await fetch(jsonDataFile);
+                if (!response.ok) {
+                    throw new Error(`Data file not found or error loading: ${response.status} ${response.statusText} (File: ${jsonDataFile})`);
+                }
+                const graphData = await response.json();
+                console.log("drawPlotlyGraph: Graph data fetched and parsed:", graphData);
+
+                if (!graphData || !graphData.scatter_points || graphData.scatter_points.length === 0) {
+                    throw new Error("No scatter points data found in the JSON file for this department.");
+                }
+
+                const plotTraces = [];
+                const scatterTrace = {
+                    x: graphData.scatter_points.map(p => p.N_PV_Registered_ORE),
+                    y: graphData.scatter_points.map(p => p.N_PV_Predicted_Model),
+                    customdata: graphData.scatter_points.map(p => [p.CodeInseeCommune, p.N_PV_Registered_ORE, p.N_PV_Predicted_Model]),
+                    mode: 'markers',
+                    type: 'scatter',
+                    name: 'Municipalities',
+                    marker: { 
+                        size: 8,
+                        color: 'rgba(31, 119, 180, 0.7)', 
+                        line: { color: 'rgba(31, 119, 180, 1)', width: 1 }
+                    },
+                    hovertemplate: "<b>Municipality Code: %{customdata[0]}</b><br>" + // Changed hover to show code from JSON directly
+                                   "PV Registered: %{customdata[1]}<br>" +
+                                   "PV Predicted: %{customdata[2]}<extra></extra>"
+                };
+                plotTraces.push(scatterTrace);
+
+                if (graphData.regression_line && graphData.regression_line.x_coords && graphData.regression_line.y_coords) {
+                    plotTraces.push({
+                        x: graphData.regression_line.x_coords,
+                        y: graphData.regression_line.y_coords,
+                        mode: 'lines',
+                        type: 'scatter',
+                        name: `${graphData.regression_line.equation || 'Fit'} (R²=${(graphData.regression_line.r_squared !== null && graphData.regression_line.r_squared !== undefined ? graphData.regression_line.r_squared.toFixed(3) : 'N/A')})`,
+                        line: { dash: 'dash', color: 'rgba(255, 127, 14, 0.9)', width: 2 }
+                    });
+                }
+
+                const plotLayout = {
+                    title: graphData.title || `PV Analysis for Dept ${departmentNumber}`,
+                    xaxis: { 
+                        title: graphData.axis_labels ? graphData.axis_labels.x : 'N<sub>PV, registered</sub> (ORE)',
+                        gridcolor: '#e9e9e9', 
+                        zerolinecolor: '#cccccc'
+                    },
+                    yaxis: { 
+                        title: graphData.axis_labels ? graphData.axis_labels.y : 'N<sub>PV, predicted</sub> (Model)',
+                        gridcolor: '#e9e9e9',
+                        zerolinecolor: '#cccccc'
+                    },
+                    hovermode: 'closest',
+                    autosize: true,
+                    paper_bgcolor: '#fff', 
+                    plot_bgcolor: '#fff', 
+                    margin: { l: 60, r: 30, b: 50, t: 70, pad: 4 }
+                };
+
+                const plotConfig = { responsive: true, displaylogo: false };
+
+                console.log("drawPlotlyGraph: Calling Plotly.newPlot on graphHostDiv.");
+                const gd = await Plotly.newPlot(graphHostDiv, plotTraces, plotLayout, plotConfig);
+                console.log("Plotly.newPlot call completed. Graph div:", gd);
+
+                if (gd && typeof gd.on === 'function') {
+                    gd.on('plotly_click', function(data) {
+                        if (data.points.length > 0) {
+                            const pointCustomData = data.points[0].customdata;
+                            let rawCodeInseeFromJson = pointCustomData[0]; 
+                            let normalizedCodeInsee = rawCodeInseeFromJson; // Start with the raw code
+
+                            if (typeof normalizedCodeInsee === 'string' && normalizedCodeInsee.endsWith('.0')) {
+                                normalizedCodeInsee = normalizedCodeInsee.slice(0, -2);
+                            } else if (typeof normalizedCodeInsee === 'number') {
+                                normalizedCodeInsee = String(Math.floor(normalizedCodeInsee));
+                            }
+                            // Ensure it's a string for consistent lookup
+                            normalizedCodeInsee = String(normalizedCodeInsee);
+
+
+                            document.getElementById('val-municipality').textContent = normalizedCodeInsee; 
+                            document.getElementById('val-pv-registered').textContent = pointCustomData[1];
+                            document.getElementById('val-pv-predicted').textContent = pointCustomData[2];
+
+                            const extraData = municipalityDataStore[normalizedCodeInsee]; 
+                            if (extraData) {
+                                document.getElementById('val-nom-standard').textContent = extraData.nom_standard;
+                                document.getElementById('val-reg-nom').textContent = extraData.reg_nom;
+                                document.getElementById('val-dep-nom').textContent = extraData.dep_nom;
+                                document.getElementById('val-superficie').textContent = extraData.superficie_km2;
+                            } else {
+                                document.getElementById('val-nom-standard').textContent = 'N/A';
+                                document.getElementById('val-reg-nom').textContent = 'N/A';
+                                document.getElementById('val-dep-nom').textContent = 'N/A';
+                                document.getElementById('val-superficie').textContent = 'N/A';
+                                console.warn(`No additional CSV data found for normalized Code INSEE: "${normalizedCodeInsee}" (raw from JSON: "${rawCodeInseeFromJson}")`);
+                            }
+
+                            document.getElementById('clickPrompt').style.display = 'none';
+                            document.getElementById('detailsTable').style.display = 'table';
+                        }
+                    });
+                    console.log("Interactive click listener attached successfully for department " + departmentNumber);
+                } else {
+                     console.error("Plotly.newPlot seemed to succeed, but graph div is not ready for event listeners or gd is not the graph div.");
+                     displayError("Error: Graph drawn, but interactivity setup failed.", 'graphHost');
+                }
+
+            } catch (error) {
+                console.error(`Error in drawPlotlyGraph for department ${departmentNumber}:`, error);
+                displayError(`Could not load or draw graph for Department ${departmentNumber}: ${error.message}. <br>Ensure the file <strong>${jsonDataFile}</strong> exists and is valid JSON.`, 'graphHost');
+            }
+        }
+
+        function waitForPlotly(callback, attempts = 0) {
+            const maxAttempts = 50; 
+            const interval = 100; 
+
+            console.log(`waitForPlotly: Attempt ${attempts + 1}/${maxAttempts}.`);
+            if (typeof Plotly !== 'undefined' && typeof Plotly.newPlot === 'function') {
+                console.log("waitForPlotly: Plotly IS READY!");
+                callback(); 
+            } else if (attempts < maxAttempts) {
+                setTimeout(() => waitForPlotly(callback, attempts + 1), interval);
+            } else {
+                console.error(`waitForPlotly: Plotly did not become available after ${maxAttempts * interval}ms.`);
+                displayError("Critical Error: Plotly.js library did not initialize. Cannot display graphs.", 'graphHost');
+            }
+        }
+        
+        function resetInfoPanel() {
+            const infoPanelError = document.querySelector('#infoPanel .error-message');
+            if(infoPanelError) infoPanelError.remove();
+
+            document.getElementById('val-municipality').textContent = '-';
+            document.getElementById('val-pv-registered').textContent = '-';
+            document.getElementById('val-pv-predicted').textContent = '-';
+            document.getElementById('val-nom-standard').textContent = '-';
+            document.getElementById('val-reg-nom').textContent = '-';
+            document.getElementById('val-dep-nom').textContent = '-';
+            document.getElementById('val-superficie').textContent = '-';
+            document.getElementById('clickPrompt').style.display = 'block';
+            document.getElementById('detailsTable').style.display = 'none';
+        }
+
+        async function setupPage() { 
+            console.log("setupPage: Starting page setup.");
+            await loadCSVFile(csvFilePath); 
+
+            console.log("setupPage: Populating department selector.");
+            populateDepartmentSelector();
+            const graphPlaceholder = document.getElementById('graphPlaceholder');
+
+            const departmentSelectElement = document.getElementById('departmentSelect');
+            departmentSelectElement.addEventListener('change', function() {
+                const selectedDepartment = this.value;
+                console.log(`Department selected: ${selectedDepartment}`);
+                resetInfoPanel(); 
+                if (selectedDepartment) {
+                    if(graphPlaceholder) graphPlaceholder.style.display = 'none';
+                    drawPlotlyGraph(selectedDepartment);
+                } else {
+                    const graphHostDiv = document.getElementById('graphHost');
+                     if (graphHostDiv.firstChild && graphHostDiv.firstChild.classList && graphHostDiv.firstChild.classList.contains('plotly-graph-div')) {
+                        Plotly.purge(graphHostDiv);
+                    } else {
+                         graphHostDiv.innerHTML = ''; 
+                    }
+                    const existingError = graphHostDiv.querySelector('.error-message');
+                    if(existingError) existingError.remove();
+
+                    if(graphPlaceholder) {
+                        graphPlaceholder.textContent = 'Please select a department to view the graph.';
+                        graphPlaceholder.style.display = 'block';
+                    }
+                }
+            });
+            console.log("setupPage: Department selector event listener attached.");
+        }
+
+        console.log("Main page script: Adding DOMContentLoaded listener.");
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log("Main page script: DOMContentLoaded event fired. Calling waitForPlotly with setupPage.");
+            waitForPlotly(setupPage); 
+        });
+        console.log("Main page script block parsing finished.");
+    </script>
+
+</body>
+</html>

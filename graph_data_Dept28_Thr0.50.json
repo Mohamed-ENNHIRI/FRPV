@@ -1,0 +1,286 @@
+{
+    "title": "Dept 28: PV Prediction vs ORE (Thr 0.50)",
+    "scatter_points": [
+        {
+            "CodeInseeCommune": "28001.0",
+            "N_PV_Registered_ORE": 29.0,
+            "N_PV_Predicted_Model": 22.0
+        },
+        {
+            "CodeInseeCommune": "28012.0",
+            "N_PV_Registered_ORE": 59.0,
+            "N_PV_Predicted_Model": 38.0
+        },
+        {
+            "CodeInseeCommune": "28015.0",
+            "N_PV_Registered_ORE": 46.0,
+            "N_PV_Predicted_Model": 45.0
+        },
+        {
+            "CodeInseeCommune": "28018.0",
+            "N_PV_Registered_ORE": 28.0,
+            "N_PV_Predicted_Model": 25.0
+        },
+        {
+            "CodeInseeCommune": "28023.0",
+            "N_PV_Registered_ORE": 17.0,
+            "N_PV_Predicted_Model": 20.0
+        },
+        {
+            "CodeInseeCommune": "28047.0",
+            "N_PV_Registered_ORE": 18.0,
+            "N_PV_Predicted_Model": 10.0
+        },
+        {
+            "CodeInseeCommune": "28051.0",
+            "N_PV_Registered_ORE": 51.0,
+            "N_PV_Predicted_Model": 39.0
+        },
+        {
+            "CodeInseeCommune": "28056.0",
+            "N_PV_Registered_ORE": 19.0,
+            "N_PV_Predicted_Model": 16.0
+        },
+        {
+            "CodeInseeCommune": "28061.0",
+            "N_PV_Registered_ORE": 19.0,
+            "N_PV_Predicted_Model": 19.0
+        },
+        {
+            "CodeInseeCommune": "28062.0",
+            "N_PV_Registered_ORE": 28.0,
+            "N_PV_Predicted_Model": 12.0
+        },
+        {
+            "CodeInseeCommune": "28064.0",
+            "N_PV_Registered_ORE": 20.0,
+            "N_PV_Predicted_Model": 15.0
+        },
+        {
+            "CodeInseeCommune": "28070.0",
+            "N_PV_Registered_ORE": 21.0,
+            "N_PV_Predicted_Model": 28.0
+        },
+        {
+            "CodeInseeCommune": "28075.0",
+            "N_PV_Registered_ORE": 16.0,
+            "N_PV_Predicted_Model": 12.0
+        },
+        {
+            "CodeInseeCommune": "28085.0",
+            "N_PV_Registered_ORE": 58.0,
+            "N_PV_Predicted_Model": 86.0
+        },
+        {
+            "CodeInseeCommune": "28088.0",
+            "N_PV_Registered_ORE": 37.0,
+            "N_PV_Predicted_Model": 38.0
+        },
+        {
+            "CodeInseeCommune": "28098.0",
+            "N_PV_Registered_ORE": 41.0,
+            "N_PV_Predicted_Model": 17.0
+        },
+        {
+            "CodeInseeCommune": "28103.0",
+            "N_PV_Registered_ORE": 69.0,
+            "N_PV_Predicted_Model": 49.0
+        },
+        {
+            "CodeInseeCommune": "28127.0",
+            "N_PV_Registered_ORE": 24.0,
+            "N_PV_Predicted_Model": 17.0
+        },
+        {
+            "CodeInseeCommune": "28134.0",
+            "N_PV_Registered_ORE": 108.0,
+            "N_PV_Predicted_Model": 65.0
+        },
+        {
+            "CodeInseeCommune": "28137.0",
+            "N_PV_Registered_ORE": 18.0,
+            "N_PV_Predicted_Model": 11.0
+        },
+        {
+            "CodeInseeCommune": "28168.0",
+            "N_PV_Registered_ORE": 29.0,
+            "N_PV_Predicted_Model": 27.0
+        },
+        {
+            "CodeInseeCommune": "28191.0",
+            "N_PV_Registered_ORE": 23.0,
+            "N_PV_Predicted_Model": 30.0
+        },
+        {
+            "CodeInseeCommune": "28195.0",
+            "N_PV_Registered_ORE": 16.0,
+            "N_PV_Predicted_Model": 16.0
+        },
+        {
+            "CodeInseeCommune": "28196.0",
+            "N_PV_Registered_ORE": 25.0,
+            "N_PV_Predicted_Model": 18.0
+        },
+        {
+            "CodeInseeCommune": "28199.0",
+            "N_PV_Registered_ORE": 34.0,
+            "N_PV_Predicted_Model": 38.0
+        },
+        {
+            "CodeInseeCommune": "28214.0",
+            "N_PV_Registered_ORE": 22.0,
+            "N_PV_Predicted_Model": 23.0
+        },
+        {
+            "CodeInseeCommune": "28218.0",
+            "N_PV_Registered_ORE": 20.0,
+            "N_PV_Predicted_Model": 50.0
+        },
+        {
+            "CodeInseeCommune": "28227.0",
+            "N_PV_Registered_ORE": 20.0,
+            "N_PV_Predicted_Model": 28.0
+        },
+        {
+            "CodeInseeCommune": "28229.0",
+            "N_PV_Registered_ORE": 20.0,
+            "N_PV_Predicted_Model": 43.0
+        },
+        {
+            "CodeInseeCommune": "28233.0",
+            "N_PV_Registered_ORE": 18.0,
+            "N_PV_Predicted_Model": 8.0
+        },
+        {
+            "CodeInseeCommune": "28236.0",
+            "N_PV_Registered_ORE": 29.0,
+            "N_PV_Predicted_Model": 30.0
+        },
+        {
+            "CodeInseeCommune": "28239.0",
+            "N_PV_Registered_ORE": 19.0,
+            "N_PV_Predicted_Model": 17.0
+        },
+        {
+            "CodeInseeCommune": "28279.0",
+            "N_PV_Registered_ORE": 26.0,
+            "N_PV_Predicted_Model": 36.0
+        },
+        {
+            "CodeInseeCommune": "28280.0",
+            "N_PV_Registered_ORE": 37.0,
+            "N_PV_Predicted_Model": 35.0
+        },
+        {
+            "CodeInseeCommune": "28298.0",
+            "N_PV_Registered_ORE": 19.0,
+            "N_PV_Predicted_Model": 23.0
+        },
+        {
+            "CodeInseeCommune": "28330.0",
+            "N_PV_Registered_ORE": 41.0,
+            "N_PV_Predicted_Model": 32.0
+        },
+        {
+            "CodeInseeCommune": "28334.0",
+            "N_PV_Registered_ORE": 33.0,
+            "N_PV_Predicted_Model": 16.0
+        },
+        {
+            "CodeInseeCommune": "28335.0",
+            "N_PV_Registered_ORE": 23.0,
+            "N_PV_Predicted_Model": 22.0
+        },
+        {
+            "CodeInseeCommune": "28348.0",
+            "N_PV_Registered_ORE": 40.0,
+            "N_PV_Predicted_Model": 22.0
+        },
+        {
+            "CodeInseeCommune": "28352.0",
+            "N_PV_Registered_ORE": 19.0,
+            "N_PV_Predicted_Model": 21.0
+        },
+        {
+            "CodeInseeCommune": "28359.0",
+            "N_PV_Registered_ORE": 22.0,
+            "N_PV_Predicted_Model": 16.0
+        },
+        {
+            "CodeInseeCommune": "28360.0",
+            "N_PV_Registered_ORE": 17.0,
+            "N_PV_Predicted_Model": 8.0
+        },
+        {
+            "CodeInseeCommune": "28364.0",
+            "N_PV_Registered_ORE": 16.0,
+            "N_PV_Predicted_Model": 10.0
+        },
+        {
+            "CodeInseeCommune": "28382.0",
+            "N_PV_Registered_ORE": 21.0,
+            "N_PV_Predicted_Model": 16.0
+        },
+        {
+            "CodeInseeCommune": "28386.0",
+            "N_PV_Registered_ORE": 28.0,
+            "N_PV_Predicted_Model": 16.0
+        },
+        {
+            "CodeInseeCommune": "28391.0",
+            "N_PV_Registered_ORE": 65.0,
+            "N_PV_Predicted_Model": 33.0
+        },
+        {
+            "CodeInseeCommune": "28393.0",
+            "N_PV_Registered_ORE": 38.0,
+            "N_PV_Predicted_Model": 34.0
+        },
+        {
+            "CodeInseeCommune": "28398.0",
+            "N_PV_Registered_ORE": 36.0,
+            "N_PV_Predicted_Model": 24.0
+        },
+        {
+            "CodeInseeCommune": "28404.0",
+            "N_PV_Registered_ORE": 78.0,
+            "N_PV_Predicted_Model": 69.0
+        },
+        {
+            "CodeInseeCommune": "28406.0",
+            "N_PV_Registered_ORE": 32.0,
+            "N_PV_Predicted_Model": 27.0
+        },
+        {
+            "CodeInseeCommune": "28409.0",
+            "N_PV_Registered_ORE": 17.0,
+            "N_PV_Predicted_Model": 14.0
+        },
+        {
+            "CodeInseeCommune": "28422.0",
+            "N_PV_Registered_ORE": 41.0,
+            "N_PV_Predicted_Model": 40.0
+        },
+        {
+            "CodeInseeCommune": "28424.0",
+            "N_PV_Registered_ORE": 27.0,
+            "N_PV_Predicted_Model": 20.0
+        }
+    ],
+    "regression_line": {
+        "x_coords": [
+            16.0,
+            108.0
+        ],
+        "y_coords": [
+            12.958066403184615,
+            87.46694822149615
+        ],
+        "equation": "y = 0.810x",
+        "r_squared": 0.5025235721173028
+    },
+    "axis_labels": {
+        "x": "N<sub>PV, registered</sub> (ORE)",
+        "y": "N<sub>PV, predicted</sub> (Model)"
+    }
+}

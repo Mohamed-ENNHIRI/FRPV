@@ -1,0 +1,541 @@
+{
+    "title": "Dept 73: PV Prediction vs ORE (Thr 0.50)",
+    "scatter_points": [
+        {
+            "CodeInseeCommune": "73006.0",
+            "N_PV_Registered_ORE": 67.0,
+            "N_PV_Predicted_Model": 87.0
+        },
+        {
+            "CodeInseeCommune": "73008.0",
+            "N_PV_Registered_ORE": 187.0,
+            "N_PV_Predicted_Model": 203.0
+        },
+        {
+            "CodeInseeCommune": "73010.0",
+            "N_PV_Registered_ORE": 152.0,
+            "N_PV_Predicted_Model": 161.0
+        },
+        {
+            "CodeInseeCommune": "73011.0",
+            "N_PV_Registered_ORE": 97.0,
+            "N_PV_Predicted_Model": 87.0
+        },
+        {
+            "CodeInseeCommune": "73015.0",
+            "N_PV_Registered_ORE": 26.0,
+            "N_PV_Predicted_Model": 50.0
+        },
+        {
+            "CodeInseeCommune": "73017.0",
+            "N_PV_Registered_ORE": 23.0,
+            "N_PV_Predicted_Model": 24.0
+        },
+        {
+            "CodeInseeCommune": "73018.0",
+            "N_PV_Registered_ORE": 24.0,
+            "N_PV_Predicted_Model": 20.0
+        },
+        {
+            "CodeInseeCommune": "73019.0",
+            "N_PV_Registered_ORE": 18.0,
+            "N_PV_Predicted_Model": 15.0
+        },
+        {
+            "CodeInseeCommune": "73021.0",
+            "N_PV_Registered_ORE": 19.0,
+            "N_PV_Predicted_Model": 25.0
+        },
+        {
+            "CodeInseeCommune": "73022.0",
+            "N_PV_Registered_ORE": 17.0,
+            "N_PV_Predicted_Model": 23.0
+        },
+        {
+            "CodeInseeCommune": "73025.0",
+            "N_PV_Registered_ORE": 19.0,
+            "N_PV_Predicted_Model": 24.0
+        },
+        {
+            "CodeInseeCommune": "73029.0",
+            "N_PV_Registered_ORE": 22.0,
+            "N_PV_Predicted_Model": 31.0
+        },
+        {
+            "CodeInseeCommune": "73030.0",
+            "N_PV_Registered_ORE": 34.0,
+            "N_PV_Predicted_Model": 33.0
+        },
+        {
+            "CodeInseeCommune": "73031.0",
+            "N_PV_Registered_ORE": 30.0,
+            "N_PV_Predicted_Model": 30.0
+        },
+        {
+            "CodeInseeCommune": "73032.0",
+            "N_PV_Registered_ORE": 27.0,
+            "N_PV_Predicted_Model": 44.0
+        },
+        {
+            "CodeInseeCommune": "73034.0",
+            "N_PV_Registered_ORE": 22.0,
+            "N_PV_Predicted_Model": 32.0
+        },
+        {
+            "CodeInseeCommune": "73036.0",
+            "N_PV_Registered_ORE": 25.0,
+            "N_PV_Predicted_Model": 34.0
+        },
+        {
+            "CodeInseeCommune": "73043.0",
+            "N_PV_Registered_ORE": 66.0,
+            "N_PV_Predicted_Model": 59.0
+        },
+        {
+            "CodeInseeCommune": "73051.0",
+            "N_PV_Registered_ORE": 41.0,
+            "N_PV_Predicted_Model": 64.0
+        },
+        {
+            "CodeInseeCommune": "73054.0",
+            "N_PV_Registered_ORE": 63.0,
+            "N_PV_Predicted_Model": 70.0
+        },
+        {
+            "CodeInseeCommune": "73058.0",
+            "N_PV_Registered_ORE": 23.0,
+            "N_PV_Predicted_Model": 29.0
+        },
+        {
+            "CodeInseeCommune": "73059.0",
+            "N_PV_Registered_ORE": 40.0,
+            "N_PV_Predicted_Model": 41.0
+        },
+        {
+            "CodeInseeCommune": "73064.0",
+            "N_PV_Registered_ORE": 70.0,
+            "N_PV_Predicted_Model": 74.0
+        },
+        {
+            "CodeInseeCommune": "73065.0",
+            "N_PV_Registered_ORE": 348.0,
+            "N_PV_Predicted_Model": 241.0
+        },
+        {
+            "CodeInseeCommune": "73075.0",
+            "N_PV_Registered_ORE": 25.0,
+            "N_PV_Predicted_Model": 25.0
+        },
+        {
+            "CodeInseeCommune": "73077.0",
+            "N_PV_Registered_ORE": 19.0,
+            "N_PV_Predicted_Model": 22.0
+        },
+        {
+            "CodeInseeCommune": "73079.0",
+            "N_PV_Registered_ORE": 27.0,
+            "N_PV_Predicted_Model": 24.0
+        },
+        {
+            "CodeInseeCommune": "73081.0",
+            "N_PV_Registered_ORE": 17.0,
+            "N_PV_Predicted_Model": 20.0
+        },
+        {
+            "CodeInseeCommune": "73082.0",
+            "N_PV_Registered_ORE": 17.0,
+            "N_PV_Predicted_Model": 23.0
+        },
+        {
+            "CodeInseeCommune": "73085.0",
+            "N_PV_Registered_ORE": 24.0,
+            "N_PV_Predicted_Model": 34.0
+        },
+        {
+            "CodeInseeCommune": "73087.0",
+            "N_PV_Registered_ORE": 30.0,
+            "N_PV_Predicted_Model": 43.0
+        },
+        {
+            "CodeInseeCommune": "73089.0",
+            "N_PV_Registered_ORE": 41.0,
+            "N_PV_Predicted_Model": 40.0
+        },
+        {
+            "CodeInseeCommune": "73096.0",
+            "N_PV_Registered_ORE": 45.0,
+            "N_PV_Predicted_Model": 55.0
+        },
+        {
+            "CodeInseeCommune": "73097.0",
+            "N_PV_Registered_ORE": 18.0,
+            "N_PV_Predicted_Model": 19.0
+        },
+        {
+            "CodeInseeCommune": "73098.0",
+            "N_PV_Registered_ORE": 22.0,
+            "N_PV_Predicted_Model": 33.0
+        },
+        {
+            "CodeInseeCommune": "73100.0",
+            "N_PV_Registered_ORE": 66.0,
+            "N_PV_Predicted_Model": 72.0
+        },
+        {
+            "CodeInseeCommune": "73103.0",
+            "N_PV_Registered_ORE": 39.0,
+            "N_PV_Predicted_Model": 53.0
+        },
+        {
+            "CodeInseeCommune": "73121.0",
+            "N_PV_Registered_ORE": 25.0,
+            "N_PV_Predicted_Model": 28.0
+        },
+        {
+            "CodeInseeCommune": "73124.0",
+            "N_PV_Registered_ORE": 61.0,
+            "N_PV_Predicted_Model": 73.0
+        },
+        {
+            "CodeInseeCommune": "73128.0",
+            "N_PV_Registered_ORE": 68.0,
+            "N_PV_Predicted_Model": 88.0
+        },
+        {
+            "CodeInseeCommune": "73129.0",
+            "N_PV_Registered_ORE": 30.0,
+            "N_PV_Predicted_Model": 35.0
+        },
+        {
+            "CodeInseeCommune": "73130.0",
+            "N_PV_Registered_ORE": 39.0,
+            "N_PV_Predicted_Model": 42.0
+        },
+        {
+            "CodeInseeCommune": "73135.0",
+            "N_PV_Registered_ORE": 17.0,
+            "N_PV_Predicted_Model": 27.0
+        },
+        {
+            "CodeInseeCommune": "73137.0",
+            "N_PV_Registered_ORE": 22.0,
+            "N_PV_Predicted_Model": 31.0
+        },
+        {
+            "CodeInseeCommune": "73138.0",
+            "N_PV_Registered_ORE": 20.0,
+            "N_PV_Predicted_Model": 14.0
+        },
+        {
+            "CodeInseeCommune": "73142.0",
+            "N_PV_Registered_ORE": 22.0,
+            "N_PV_Predicted_Model": 32.0
+        },
+        {
+            "CodeInseeCommune": "73146.0",
+            "N_PV_Registered_ORE": 17.0,
+            "N_PV_Predicted_Model": 16.0
+        },
+        {
+            "CodeInseeCommune": "73150.0",
+            "N_PV_Registered_ORE": 70.0,
+            "N_PV_Predicted_Model": 94.0
+        },
+        {
+            "CodeInseeCommune": "73151.0",
+            "N_PV_Registered_ORE": 87.0,
+            "N_PV_Predicted_Model": 110.0
+        },
+        {
+            "CodeInseeCommune": "73153.0",
+            "N_PV_Registered_ORE": 25.0,
+            "N_PV_Predicted_Model": 25.0
+        },
+        {
+            "CodeInseeCommune": "73154.0",
+            "N_PV_Registered_ORE": 51.0,
+            "N_PV_Predicted_Model": 67.0
+        },
+        {
+            "CodeInseeCommune": "73155.0",
+            "N_PV_Registered_ORE": 41.0,
+            "N_PV_Predicted_Model": 45.0
+        },
+        {
+            "CodeInseeCommune": "73160.0",
+            "N_PV_Registered_ORE": 26.0,
+            "N_PV_Predicted_Model": 29.0
+        },
+        {
+            "CodeInseeCommune": "73164.0",
+            "N_PV_Registered_ORE": 24.0,
+            "N_PV_Predicted_Model": 38.0
+        },
+        {
+            "CodeInseeCommune": "73171.0",
+            "N_PV_Registered_ORE": 22.0,
+            "N_PV_Predicted_Model": 26.0
+        },
+        {
+            "CodeInseeCommune": "73178.0",
+            "N_PV_Registered_ORE": 18.0,
+            "N_PV_Predicted_Model": 21.0
+        },
+        {
+            "CodeInseeCommune": "73179.0",
+            "N_PV_Registered_ORE": 160.0,
+            "N_PV_Predicted_Model": 154.0
+        },
+        {
+            "CodeInseeCommune": "73182.0",
+            "N_PV_Registered_ORE": 44.0,
+            "N_PV_Predicted_Model": 46.0
+        },
+        {
+            "CodeInseeCommune": "73183.0",
+            "N_PV_Registered_ORE": 30.0,
+            "N_PV_Predicted_Model": 39.0
+        },
+        {
+            "CodeInseeCommune": "73187.0",
+            "N_PV_Registered_ORE": 26.0,
+            "N_PV_Predicted_Model": 42.0
+        },
+        {
+            "CodeInseeCommune": "73191.0",
+            "N_PV_Registered_ORE": 48.0,
+            "N_PV_Predicted_Model": 67.0
+        },
+        {
+            "CodeInseeCommune": "73194.0",
+            "N_PV_Registered_ORE": 16.0,
+            "N_PV_Predicted_Model": 9.0
+        },
+        {
+            "CodeInseeCommune": "73196.0",
+            "N_PV_Registered_ORE": 19.0,
+            "N_PV_Predicted_Model": 17.0
+        },
+        {
+            "CodeInseeCommune": "73204.0",
+            "N_PV_Registered_ORE": 17.0,
+            "N_PV_Predicted_Model": 27.0
+        },
+        {
+            "CodeInseeCommune": "73208.0",
+            "N_PV_Registered_ORE": 26.0,
+            "N_PV_Predicted_Model": 37.0
+        },
+        {
+            "CodeInseeCommune": "73210.0",
+            "N_PV_Registered_ORE": 16.0,
+            "N_PV_Predicted_Model": 20.0
+        },
+        {
+            "CodeInseeCommune": "73213.0",
+            "N_PV_Registered_ORE": 76.0,
+            "N_PV_Predicted_Model": 90.0
+        },
+        {
+            "CodeInseeCommune": "73215.0",
+            "N_PV_Registered_ORE": 71.0,
+            "N_PV_Predicted_Model": 79.0
+        },
+        {
+            "CodeInseeCommune": "73218.0",
+            "N_PV_Registered_ORE": 23.0,
+            "N_PV_Predicted_Model": 22.0
+        },
+        {
+            "CodeInseeCommune": "73219.0",
+            "N_PV_Registered_ORE": 17.0,
+            "N_PV_Predicted_Model": 20.0
+        },
+        {
+            "CodeInseeCommune": "73222.0",
+            "N_PV_Registered_ORE": 74.0,
+            "N_PV_Predicted_Model": 68.0
+        },
+        {
+            "CodeInseeCommune": "73224.0",
+            "N_PV_Registered_ORE": 16.0,
+            "N_PV_Predicted_Model": 19.0
+        },
+        {
+            "CodeInseeCommune": "73225.0",
+            "N_PV_Registered_ORE": 53.0,
+            "N_PV_Predicted_Model": 49.0
+        },
+        {
+            "CodeInseeCommune": "73226.0",
+            "N_PV_Registered_ORE": 35.0,
+            "N_PV_Predicted_Model": 42.0
+        },
+        {
+            "CodeInseeCommune": "73231.0",
+            "N_PV_Registered_ORE": 18.0,
+            "N_PV_Predicted_Model": 19.0
+        },
+        {
+            "CodeInseeCommune": "73236.0",
+            "N_PV_Registered_ORE": 29.0,
+            "N_PV_Predicted_Model": 56.0
+        },
+        {
+            "CodeInseeCommune": "73240.0",
+            "N_PV_Registered_ORE": 30.0,
+            "N_PV_Predicted_Model": 35.0
+        },
+        {
+            "CodeInseeCommune": "73243.0",
+            "N_PV_Registered_ORE": 39.0,
+            "N_PV_Predicted_Model": 46.0
+        },
+        {
+            "CodeInseeCommune": "73247.0",
+            "N_PV_Registered_ORE": 30.0,
+            "N_PV_Predicted_Model": 32.0
+        },
+        {
+            "CodeInseeCommune": "73248.0",
+            "N_PV_Registered_ORE": 39.0,
+            "N_PV_Predicted_Model": 32.0
+        },
+        {
+            "CodeInseeCommune": "73249.0",
+            "N_PV_Registered_ORE": 30.0,
+            "N_PV_Predicted_Model": 38.0
+        },
+        {
+            "CodeInseeCommune": "73250.0",
+            "N_PV_Registered_ORE": 65.0,
+            "N_PV_Predicted_Model": 58.0
+        },
+        {
+            "CodeInseeCommune": "73257.0",
+            "N_PV_Registered_ORE": 57.0,
+            "N_PV_Predicted_Model": 76.0
+        },
+        {
+            "CodeInseeCommune": "73258.0",
+            "N_PV_Registered_ORE": 54.0,
+            "N_PV_Predicted_Model": 26.0
+        },
+        {
+            "CodeInseeCommune": "73259.0",
+            "N_PV_Registered_ORE": 16.0,
+            "N_PV_Predicted_Model": 16.0
+        },
+        {
+            "CodeInseeCommune": "73261.0",
+            "N_PV_Registered_ORE": 50.0,
+            "N_PV_Predicted_Model": 42.0
+        },
+        {
+            "CodeInseeCommune": "73263.0",
+            "N_PV_Registered_ORE": 36.0,
+            "N_PV_Predicted_Model": 43.0
+        },
+        {
+            "CodeInseeCommune": "73270.0",
+            "N_PV_Registered_ORE": 77.0,
+            "N_PV_Predicted_Model": 79.0
+        },
+        {
+            "CodeInseeCommune": "73278.0",
+            "N_PV_Registered_ORE": 22.0,
+            "N_PV_Predicted_Model": 20.0
+        },
+        {
+            "CodeInseeCommune": "73283.0",
+            "N_PV_Registered_ORE": 16.0,
+            "N_PV_Predicted_Model": 19.0
+        },
+        {
+            "CodeInseeCommune": "73284.0",
+            "N_PV_Registered_ORE": 18.0,
+            "N_PV_Predicted_Model": 23.0
+        },
+        {
+            "CodeInseeCommune": "73285.0",
+            "N_PV_Registered_ORE": 24.0,
+            "N_PV_Predicted_Model": 20.0
+        },
+        {
+            "CodeInseeCommune": "73286.0",
+            "N_PV_Registered_ORE": 38.0,
+            "N_PV_Predicted_Model": 43.0
+        },
+        {
+            "CodeInseeCommune": "73288.0",
+            "N_PV_Registered_ORE": 29.0,
+            "N_PV_Predicted_Model": 33.0
+        },
+        {
+            "CodeInseeCommune": "73290.0",
+            "N_PV_Registered_ORE": 25.0,
+            "N_PV_Predicted_Model": 37.0
+        },
+        {
+            "CodeInseeCommune": "73300.0",
+            "N_PV_Registered_ORE": 42.0,
+            "N_PV_Predicted_Model": 43.0
+        },
+        {
+            "CodeInseeCommune": "73301.0",
+            "N_PV_Registered_ORE": 18.0,
+            "N_PV_Predicted_Model": 34.0
+        },
+        {
+            "CodeInseeCommune": "73303.0",
+            "N_PV_Registered_ORE": 62.0,
+            "N_PV_Predicted_Model": 94.0
+        },
+        {
+            "CodeInseeCommune": "73306.0",
+            "N_PV_Registered_ORE": 32.0,
+            "N_PV_Predicted_Model": 45.0
+        },
+        {
+            "CodeInseeCommune": "73312.0",
+            "N_PV_Registered_ORE": 20.0,
+            "N_PV_Predicted_Model": 26.0
+        },
+        {
+            "CodeInseeCommune": "73326.0",
+            "N_PV_Registered_ORE": 43.0,
+            "N_PV_Predicted_Model": 51.0
+        },
+        {
+            "CodeInseeCommune": "73328.0",
+            "N_PV_Registered_ORE": 31.0,
+            "N_PV_Predicted_Model": 35.0
+        },
+        {
+            "CodeInseeCommune": "73329.0",
+            "N_PV_Registered_ORE": 29.0,
+            "N_PV_Predicted_Model": 42.0
+        },
+        {
+            "CodeInseeCommune": "73330.0",
+            "N_PV_Registered_ORE": 38.0,
+            "N_PV_Predicted_Model": 51.0
+        }
+    ],
+    "regression_line": {
+        "x_coords": [
+            16.0,
+            348.0
+        ],
+        "y_coords": [
+            15.506139416899838,
+            337.2585323175715
+        ],
+        "equation": "y = 0.969x",
+        "r_squared": 0.8320443366782384
+    },
+    "axis_labels": {
+        "x": "N<sub>PV, registered</sub> (ORE)",
+        "y": "N<sub>PV, predicted</sub> (Model)"
+    }
+}
